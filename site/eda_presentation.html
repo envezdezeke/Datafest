@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASA DataFest 2026 EDA Presentation</title>
+  <style>
+    :root {
+      --bg: #f4efe7;
+      --paper: rgba(255, 251, 245, 0.84);
+      --ink: #1d2a2f;
+      --muted: #5a6a6d;
+      --accent: #0d6c63;
+      --accent-2: #c86b3c;
+      --line: rgba(29, 42, 47, 0.12);
+      --shadow: 0 20px 50px rgba(35, 41, 44, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(200, 107, 60, 0.16), transparent 28%),
+        radial-gradient(circle at top right, rgba(13, 108, 99, 0.18), transparent 26%),
+        linear-gradient(180deg, #f7f2eb 0%, #efe5d8 100%);
+      line-height: 1.5;
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding: 72px 6vw 48px;
+      display: grid;
+      align-items: end;
+    }
+
+    .hero-card {
+      max-width: 1120px;
+      background: linear-gradient(145deg, rgba(255,255,255,0.72), rgba(255,248,240,0.9));
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      padding: 40px;
+      backdrop-filter: blur(10px);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--accent);
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 5vw, 5.8rem);
+      line-height: 0.95;
+      margin-bottom: 18px;
+      max-width: 10ch;
+    }
+
+    .hero-grid, .metric-grid, .two-col, .chart-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1.2fr 0.9fr;
+      align-items: start;
+    }
+
+    .metric-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 28px;
+    }
+
+    .metric-card, .panel, .chart-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .metric-card {
+      padding: 18px 20px;
+    }
+
+    .metric-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .metric-card strong {
+      display: block;
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .metric-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    section {
+      padding: 24px 6vw 48px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 20px;
+    }
+
+    .section-header p {
+      max-width: 64ch;
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .two-col {
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+
+    .panel {
+      padding: 26px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li + li {
+      margin-top: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .chart-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .chart-card {
+      overflow: hidden;
+    }
+
+    .chart-card img {
+      width: 100%;
+      display: block;
+      background: white;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+
+    .chart-card figcaption {
+      padding: 18px 20px 20px;
+    }
+
+    .chart-card h3 {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    .chart-card p, .lede, .small {
+      color: var(--muted);
+    }
+
+    .lede {
+      font-size: 1.05rem;
+      max-width: 56ch;
+    }
+
+    .small {
+      font-size: 0.92rem;
+    }
+
+    .footer {
+      padding: 0 6vw 60px;
+    }
+
+    .footer .panel {
+      background: linear-gradient(135deg, rgba(13,108,99,0.95), rgba(24,56,58,0.96));
+      color: white;
+    }
+
+    .footer .panel p,
+    .footer .panel li {
+      color: rgba(255,255,255,0.86);
+    }
+
+    .chip {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(13, 108, 99, 0.11);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .two-col,
+      .chart-grid,
+      .metric-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-card">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">ASA DataFest 2026</span>
+          <h1>Exploratory Data Analysis of Patient Journeys</h1>
+          <p class="lede">A presentation-ready summary of the Stormont Vail Health dataset, built from the project’s existing EDA outputs and focused on the patient-journey question at the center of the challenge.</p>
+          <div style="margin-top:20px;">
+            <span class="chip">2022-2025 coverage</span>
+            <span class="chip">7 source tables</span>
+            <span class="chip">Journey framing</span>
+            <span class="chip">Operational + clinical data</span>
+          </div>
+        </div>
+        <div class="panel">
+          <h2>Opening Story</h2>
+          <ul><li>The dataset spans 2022 to 2025 and centers on 7,675,801 encounters across 947,685 patient records.</li><li>Patient utilization is highly skewed: median 8 encounters per patient, mean 21.3, and a maximum of 1,287.</li><li>Trauma and fracture diagnosis groups dominate the diagnosis catalog, led by Fracture of lower leg, including ankle with 84,079 records.</li><li>SDOH collection is informative but incomplete: the most common value is *Unspecified, so analysis should filter unspecified responses before interpretation.</li></ul>
+        </div>
+      </div>
+      <div class="metric-grid">
+        <div class="metric-card"><span>Encounters</span><strong>7,675,801</strong><p>Central fact table for patient-system interactions.</p></div>
+        <div class="metric-card"><span>Patients</span><strong>947,685</strong><p>De-identified patient records available for joins.</p></div>
+        <div class="metric-card"><span>SDOH Responses</span><strong>3,977,901</strong><p>Useful but operationally rolled out over time.</p></div>
+        <div class="metric-card"><span>Approx. In-Memory Size</span><strong>7.4 GB</strong><p>Combined dataframe footprint from the current EDA run.</p></div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">1. Dataset Structure</span>
+        <h2>What We’re Working With</h2>
+      </div>
+      <p>The data is organized around encounters, with supporting patient, diagnosis, department, provider, and SDOH context. This makes it naturally suited for longitudinal journey analysis once keys are joined cleanly.</p>
+    </div>
+    <div class="two-col">
+      <div class="panel">
+        <h3>Source Tables</h3>
+        <table><thead><tr><th>table</th><th>rows</th><th>cols</th><th>mem_mb</th></tr></thead><tbody><tr><td>encounters</td><td>7675801</td><td>31</td><td>5236.8</td></tr><tr><td>patients</td><td>947685</td><td>12</td><td>643.5</td></tr><tr><td>diagnosis</td><td>1531262</td><td>5</td><td>611.8</td></tr><tr><td>providers</td><td>299075</td><td>8</td><td>137.4</td></tr><tr><td>departments</td><td>11597</td><td>9</td><td>5.3</td></tr><tr><td>social_determinants</td><td>3977901</td><td>5</td><td>925.0</td></tr><tr><td>tigercensus</td><td>2463</td><td>4</td><td>0.1</td></tr></tbody></table>
+      </div>
+      <div class="panel">
+        <h3>Join Reliability</h3>
+        <ul><li>Encounter to patient coverage: 95.8%</li><li>Encounter to provider coverage: 100.000%</li><li>SDOH to patient coverage: 99.6%</li><li>Department and non--1 diagnosis joins are effectively complete in the precomputed validation run.</li></ul>
+        <p class="small" style="margin-top:18px;">This is strong enough to support enriched journey tables, especially when excluding placeholder diagnosis keys and other clearly non-clinical records.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">2. Data Quality</span>
+        <h2>Where The Data Is Strong And Where It’s Fragile</h2>
+      </div>
+      <p>The EDA shows a healthy relational structure, but several fields are intentionally sparse or operationally incomplete. Presentation conclusions should lean on stable variables and explicitly note the weak ones.</p>
+    </div>
+    <div class="two-col">
+      <div class="panel">
+        <h3>Practical Cautions</h3>
+        <ul><li>Patient geography is suppressed or unspecified for 64.5% of patients.</li><li>Sex assigned at birth is unusable as a primary feature in this release because 93.5% is missing or unspecified.</li><li>Admission/discharge timestamps are expectedly sparse outside hospital-style encounters; AdmissionInstant is missing in 86.3% of rows.</li><li>Visit type descriptions are still helpful, but 15.8% are unspecified.</li></ul>
+      </div>
+      <div class="panel">
+        <h3>Best Usable Features</h3>
+        <ul><li>Encounter date and encounter type</li><li>Diagnosis group and diagnosis value after filtering placeholders</li><li>Department type for care setting context</li><li>Patient OMB race and OMB ethnicity</li><li>Selected SDOH questions after removing unspecified rows</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">3. Utilization Patterns</span>
+        <h2>Volume, Case Mix, And System Activity</h2>
+      </div>
+      <p>The system appears busier over time, with heavy concentration in a handful of encounter types. Hospital-specific fields behave as expected and should not be read as global missingness problems.</p>
+    </div>
+    <div class="chart-grid">
+      
+    <figure class="chart-card">
+<img src="../eda_output/enc_01_volume_by_year.png" alt="Encounter Volume By Year" />
+      <figcaption>
+        <h3>Encounter Volume By Year</h3>
+        <p>The system’s observed activity grows steadily from 2022 through 2025.</p>
+      </figcaption>
+    </figure>
+    
+    <figure class="chart-card">
+<img src="../eda_output/enc_03_type_distribution.png" alt="Encounter Type Distribution" />
+      <figcaption>
+        <h3>Encounter Type Distribution</h3>
+        <p>Office, lab, and hospital encounters make up the bulk of activity.</p>
+      </figcaption>
+    </figure>
+    
+    <figure class="chart-card">
+<img src="../eda_output/enc_05_length_of_stay.png" alt="Hospital Length Of Stay" />
+      <figcaption>
+        <h3>Hospital Length Of Stay</h3>
+        <p>Hospital stays are concentrated at short durations with a meaningful long tail.</p>
+      </figcaption>
+    </figure>
+    
+    <figure class="chart-card">
+<img src="../eda_output/pat_03_demographic_vars.png" alt="Patient Demographics Snapshot" />
+      <figcaption>
+        <h3>Patient Demographics Snapshot</h3>
+        <p>Race, smoking, vital status, and MyChart status are more usable than several other patient fields.</p>
+      </figcaption>
+    </figure>
+    
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">4. Diagnoses And Journeys</span>
+        <h2>The Core Patient-Journey Story</h2>
+      </div>
+      <p>The project’s journey framing becomes most persuasive when connected to diagnosis groups. Encounters are not evenly distributed across patients or conditions, which creates strong opportunities for segmentation and follow-up analysis.</p>
+    </div>
+    <div class="two-col" style="margin-bottom:18px;">
+      <div class="panel">
+        <h3>Journey Statistics</h3>
+        <ul><li>Median encounters per patient: 8</li><li>Mean encounters per patient: 21.3</li><li>Maximum observed encounters for a single patient: 1,287</li><li>Top diagnosis group: Fracture of lower leg, including ankle (84,079)</li><li>Example high-frequency specific diagnosis: Local infection of the skin and subcutaneous tissue, unspecified( ICD-10-CM: L08.9 ) (10,362)</li></ul>
+      </div>
+      <div class="panel">
+        <h3>Interpretation</h3>
+        <ul><li>A median of 8 encounters suggests nontrivial longitudinal care even before narrowing to condition-specific journeys.</li><li>The long right tail implies a small subset of patients account for a disproportionate amount of activity.</li><li>Trauma-heavy diagnosis groups may produce short, intense journeys, while chronic conditions may produce longer, more diffuse ones.</li><li>Inter-encounter gaps are a natural next lens for identifying delayed follow-up or care fragmentation.</li></ul>
+      </div>
+    </div>
+    <div class="chart-grid">
+      
+    <figure class="chart-card">
+<img src="../eda_output/diag_01_top_groups.png" alt="Top Diagnosis Groups" />
+      <figcaption>
+        <h3>Top Diagnosis Groups</h3>
+        <p>Fracture-related categories dominate the high-frequency diagnosis groups.</p>
+      </figcaption>
+    </figure>
+    
+    <figure class="chart-card">
+<img src="../eda_output/journey_02_encounters_by_diagnosis_group.png" alt="Journey Length By Diagnosis Group" />
+      <figcaption>
+        <h3>Journey Length By Diagnosis Group</h3>
+        <p>Encounter counts vary sharply by diagnosis group, which is promising for journey segmentation.</p>
+      </figcaption>
+    </figure>
+    
+    <figure class="chart-card">
+<img src="../eda_output/journey_03_inter_encounter_gaps.png" alt="Time Between Encounters" />
+      <figcaption>
+        <h3>Time Between Encounters</h3>
+        <p>Many patients have tightly clustered visits, with a long tail of delayed follow-up.</p>
+      </figcaption>
+    </figure>
+    
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">5. Social Determinants</span>
+        <h2>Useful Signal, But Not A Census</h2>
+      </div>
+      <p>SDOH data can strengthen a patient-journey narrative, but only when framed as a partially rolled-out screening program. The response volume and question mix appear driven by operational rollout rather than universal collection.</p>
+    </div>
+    <div class="two-col" style="margin-bottom:18px;">
+      <div class="panel">
+        <h3>What The Counts Say</h3>
+        <ul><li>Most frequent raw SDOH row: *Unspecified (2,326,196)</li><li>Most frequent named question: In the past 12 months, has lack of transportation kept you from medical appointments or from getting medications? (82,166)</li><li>Transportation, food insecurity, utilities, stress, and alcohol questions appear early and often.</li><li>Depression-related questions exist, but counts are much lower and likely come from narrower workflows.</li></ul>
+      </div>
+      <div class="panel">
+        <h3>Presentation Guidance</h3>
+        <ul><li>Filter out &#x27;*Unspecified&#x27; DisplayName before any chart you show.</li><li>Avoid treating SDOH prevalence as a population estimate.</li><li>Use SDOH as explanatory context for selected journey subsets, not as a universal baseline.</li><li>Pair SDOH timing with encounter timing to tell a care-access or support-needs story.</li></ul>
+      </div>
+    </div>
+    <div class="chart-grid">
+      
+    <figure class="chart-card">
+<img src="../eda_output/sdoh_03_rollout_timeline.png" alt="SDOH Rollout Over Time" />
+      <figcaption>
+        <h3>SDOH Rollout Over Time</h3>
+        <p>SDOH collection ramps over time, suggesting operational rollout rather than full-population sampling.</p>
+      </figcaption>
+    </figure>
+    
+      
+    <figure class="chart-card">
+<img src="../eda_output/sdoh_01_question_counts.png" alt="Top SDOH Questions" />
+      <figcaption>
+        <h3>Top SDOH Questions</h3>
+        <p>Question volume reveals which screening items were used most frequently in practice.</p>
+      </figcaption>
+    </figure>
+    
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="panel">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.72);">6. Recommended Next Step</span>
+      <h2>How To Turn This Into A Strong DataFest Story</h2>
+      <ul><li>Define journeys with PatientDurableKey + DiagnosisValue + Date rather than encounter type alone.</li><li>Filter diagnosis placeholders like IMO0001 and IMO0002 before presenting clinical patterns.</li><li>Use SDOH only after excluding &#x27;*Unspecified&#x27; DisplayName rows and framing it as a non-randomly collected subset.</li><li>Lean on encounter timing, department type, diagnosis group, and OMB race/ethnicity for the most stable presentation story.</li></ul>
+      <p class="small" style="margin-top:18px;">This HTML was generated from the current EDA outputs in <code>eda_output/</code>. If the underlying plots or CSV summaries change, rerun <code>python3 generate_presentation.py</code> to refresh the presentation.</p>
+    </div>
+  </section>
+</body>
+</html>

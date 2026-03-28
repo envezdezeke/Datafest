@@ -1,0 +1,31 @@
+DiagnosisName,count
+Reserved for inherently not codable concepts without codable children( ICD-10-CM: IMO0001 ),28789
+Reserved for concepts with insufficient information to code with codable children( ICD-10-CM: IMO0002 ),14505
+"Local infection of the skin and subcutaneous tissue, unspecified( ICD-10-CM: L08.9 )",10362
+Genetic susceptibility to other disease( ICD-10-CM: Z15.89 ),4173
+"Other specified congenital malformation syndromes, not elsewhere classified (HHS-HCC)( ICD-10-CM: Q87.89 )",3367
+Other specified postprocedural states( ICD-10-CM: Z98.890 ),3270
+"Bitten or stung by nonvenomous insect and other nonvenomous arthropods, initial encounter( ICD-10-CM: W57.XXXA )",3223
+"Malignant (primary) neoplasm, unspecified (Multi HCC)( ICD-10-CM: C80.1 )",2192
+"Unspecified open wound of unspecified part of head, initial encounter( ICD-10-CM: S01.90XA )",2124
+Long term (current) use of insulin (HCC) (Multi HCC)( ICD-10-CM: Z79.4 ),2051
+"Bitten or stung by nonvenomous insect and other nonvenomous arthropods, subsequent encounter( ICD-10-CM: W57.XXXD )",1983
+"Bitten or stung by nonvenomous insect and other nonvenomous arthropods, sequela( ICD-10-CM: W57.XXXS )",1970
+Other specified health status( ICD-10-CM: Z78.9 ),1805
+"Other specified personal risk factors, not elsewhere classified( ICD-10-CM: Z91.89 )",1496
+Genetic susceptibility to epilepsy and neurodevelopmental disorders( ICD-10-CM: Z15.1 ),1464
+"Unspecified open wound of unspecified part of head, sequela( ICD-10-CM: S01.90XS )",1310
+"Unspecified open wound of unspecified part of head, subsequent encounter( ICD-10-CM: S01.90XD )",1275
+Malignant neoplasm of unspecified site of unspecified female breast (Multi HCC)( ICD-10-CM: C50.919 ),1145
+Personal history of other diseases of the circulatory system( ICD-10-CM: Z86.79 ),1055
+Severe sepsis without septic shock (Multi HCC)( ICD-10-CM: R65.20 ),1049
+Other problems related to education and literacy( ICD-10-CM: Z55.8 ),1002
+Other genetic related intellectual disability( ICD-10-CM: F78.A9 ),993
+Secondary malignant neoplasm of other specified sites (Multi HCC)( ICD-10-CM: C79.89 ),924
+"Blindness, one eye, unspecified eye( ICD-10-CM: H54.40 )",851
+Personal history of other infectious and parasitic diseases( ICD-10-CM: Z86.19 ),823
+"Low vision, one eye, unspecified eye( ICD-10-CM: H54.50 )",810
+"Unspecified intracranial injury with loss of consciousness of unspecified duration, initial encounter (HCC) (CMS-HCC)( ICD-10-CM: S06.9X9A )",791
+"Opioid dependence, in remission (Multi HCC)( ICD-10-CM: F11.21 )",791
+"Toxic effect of other ingested (parts of) plant(s), accidental (unintentional), initial encounter( ICD-10-CM: T62.2X1A )",769
+Malignant neoplasm of unspecified site of right female breast (Multi HCC)( ICD-10-CM: C50.911 ),763

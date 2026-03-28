@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regression to the Mean Streets | Opportunities</title>
+  <style>
+    :root { --bg:#f4efe7; --bg-2:#efe5d8; --panel:rgba(255,251,245,.84); --ink:#1d2a2f; --muted:#5a6a6d; --accent:#0d6c63; --accent-2:#c86b3c; --line:rgba(29,42,47,.12); --shadow:0 20px 50px rgba(35,41,44,.12); }
+    [data-theme="dark"] { --bg:#10181c; --bg-2:#182229; --panel:rgba(20,29,34,.88); --ink:#edf2ef; --muted:#a7b7b8; --accent:#6fd3c7; --accent-2:#f39a6b; --line:rgba(237,242,239,.1); --shadow:0 20px 50px rgba(0,0,0,.3); }
+    *{box-sizing:border-box} body{margin:0;font-family:"Avenir Next","Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at top left, rgba(200,107,60,.14), transparent 26%),radial-gradient(circle at top right, rgba(13,108,99,.16), transparent 28%),linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);line-height:1.55}
+    .shell,.topbar-inner{width:min(1180px,calc(100vw - 28px));margin:0 auto}.shell{padding-bottom:40px}.topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb, var(--bg) 76%, transparent);border-bottom:1px solid var(--line)}.topbar-inner{padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--accent)}.nav{display:flex;gap:10px;flex-wrap:wrap}.nav a,.theme-toggle{text-decoration:none;color:var(--muted);font-size:14px;padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:var(--panel)}.nav a.active{color:var(--ink)}.theme-toggle{cursor:pointer;font:inherit}
+    .card{background:var(--panel);border:1px solid color-mix(in srgb, white 55%, var(--line));border-radius:30px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}.hero,.grid{display:grid;gap:18px}.hero{padding:42px 0 22px}.hero-card,.score-card,.opportunity{padding:30px}.eyebrow{display:inline-block;margin-bottom:14px;color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}h1,h2,h3{margin:0;line-height:1.08}h1{font-size:clamp(36px,6vw,56px)}h2{font-size:28px;margin-bottom:10px}h3{font-size:20px;margin-bottom:8px}p{margin:0 0 14px;color:var(--muted)}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .pill{display:inline-block;border-radius:999px;padding:6px 10px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px;font-weight:700}.hi{background:rgba(200,107,60,.12);color:var(--accent-2)}.med{background:rgba(13,108,99,.12);color:var(--accent)}table{width:100%;border-collapse:collapse;background:color-mix(in srgb, var(--panel) 98%, transparent);border-radius:18px;overflow:hidden;border:1px solid var(--line)}th,td{padding:14px;border-bottom:1px solid var(--line);text-align:left}th{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}tr:last-child td{border-bottom:none}.badge{display:inline-block;min-width:44px;padding:6px 10px;border-radius:999px;background:rgba(13,108,99,.12);color:var(--accent);font-weight:700;text-align:center}ul{margin:0;padding-left:18px}li{margin-bottom:8px}
+    @media (max-width: 960px){.grid{grid-template-columns:1fr}.hero-card,.score-card,.opportunity{padding:22px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><div class="brand">Regression to the Mean Streets</div><div class="nav"><a href="eda_report.html">Overview</a><a class="active" href="opportunities.html">Opportunities</a><a href="strategy_model.html">Strategy Model</a><a href="evidence.html">Evidence</a><a href="roadmap.html">Roadmap</a><button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button></div></div></div>
+  <div class="shell">
+    <section class="hero"><div class="card hero-card"><div class="eyebrow">Priority Board</div><h1>Opportunity Scoring</h1><p>This page ranks the strongest strategy directions by volume, expected operational impact, and data confidence so your team can decide what should headline the final story.</p></div></section>
+    <section class="card score-card">
+      <div class="eyebrow">Scorecard</div>
+      <h2>Ranked Opportunities</h2>
+      <table>
+        <thead><tr><th>Opportunity</th><th>Volume</th><th>Impact</th><th>Confidence</th><th>Total</th></tr></thead>
+        <tbody>
+          <tr><td>Post-acute follow-up gaps</td><td>5</td><td>5</td><td>5</td><td><span class="badge">15</span></td></tr>
+          <tr><td>High-utilizer journey segmentation</td><td>5</td><td>5</td><td>4</td><td><span class="badge">14</span></td></tr>
+          <tr><td>Department handoff redesign</td><td>4</td><td>4</td><td>4</td><td><span class="badge">12</span></td></tr>
+          <tr><td>Diagnosis-specific pathway design</td><td>4</td><td>4</td><td>4</td><td><span class="badge">12</span></td></tr>
+          <tr><td>SDOH overlay for targeted outreach</td><td>3</td><td>4</td><td>2</td><td><span class="badge">9</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="grid">
+      <article class="card opportunity"><div class="pill hi">Top Pick</div><h3>Post-acute follow-up gaps</h3><p>The data strongly supports this: long-tail delays between encounters, acute and fracture-heavy cohorts, and operationally intuitive interventions.</p><ul><li>Best slide headline for judges.</li><li>Easy to tie to patient journey impact.</li><li>Strongest evidence-to-recommendation chain.</li></ul></article>
+      <article class="card opportunity"><div class="pill hi">Second Pick</div><h3>High-utilizer segmentation</h3><p>The median-to-mean gap signals a concentrated set of repeat users. Segmenting them gives your story a second lane beyond follow-up delays.</p><ul><li>Supports care coordination recommendations.</li><li>Works well with patient-level visuals.</li><li>Shows system-level complexity.</li></ul></article>
+      <article class="card opportunity"><div class="pill med">Selective Use</div><h3>SDOH targeting overlay</h3><p>Useful after cleaning unspecified responses, but best framed as “among screened patients” rather than the full population.</p><ul><li>Good supporting section.</li><li>Not ideal as the main story.</li><li>Needs clear caveat language.</li></ul></article>
+    </section>
+  </div>
+  <script>(function(){const root=document.documentElement;const button=document.querySelector('[data-theme-toggle]');const saved=localStorage.getItem('rtms-theme');if(saved==='dark')root.setAttribute('data-theme','dark');function sync(){button.textContent=root.getAttribute('data-theme')==='dark'?'Light mode':'Dark mode';}button.addEventListener('click',function(){const dark=root.getAttribute('data-theme')==='dark';if(dark){root.removeAttribute('data-theme');localStorage.setItem('rtms-theme','light');}else{root.setAttribute('data-theme','dark');localStorage.setItem('rtms-theme','dark');}sync();});sync();}());</script>
+</body>
+</html>

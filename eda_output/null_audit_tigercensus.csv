@@ -1,0 +1,5 @@
+column,dtype,n_null,n_unspecified,pct_missing_or_unspec,n_unique
+GEOID,int64,0,0,0.0,2463
+PopulationValue,float64,2,0,0.1,1277
+CENTLAT,float64,2,0,0.1,2460
+CENTLON,float64,2,0,0.1,2460

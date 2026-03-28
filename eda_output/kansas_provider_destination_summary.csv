@@ -1,0 +1,164 @@
+zip5,provider_city,provider_state,provider_lat,provider_lon,encounter_count,unique_patients,unique_providers,top_specialty,top_department,top_provider_type,heat_weight
+66606,Topeka,KS,39.0583,-95.7095,1467352,123486,473,Family Medicine,HEART CENTER CARDIOLOGY,Physician,14.198970655309251
+66614,Topeka,KS,39.0154,-95.7469,349990,68755,119,Family Medicine,ASBURY CLINIC,Physician,12.765662718849264
+66604,Topeka,KS,39.0405,-95.7178,301840,81284,228,Emergency Medicine,EMERGENCY DEPARTMENT,Physician,12.617655667646222
+66801,Emporia,KS,38.4184,-96.1871,129335,15903,59,Internal Medicine,EMPORIA INTERNAL MED,Physician,11.770168948281443
+66502,Manhattan,KS,39.1938,-96.5858,111404,20988,139,Family Medicine,MHK PRIMARY CARE,Physician,11.620927488771507
+66618,Topeka,KS,39.1329,-95.7023,107534,20086,24,Family Medicine,NORTH FIELDING CLINIC,Nurse Practitioner,11.585571654955082
+66605,Topeka,KS,39.0151,-95.6439,98419,35542,18,Family Medicine,CROCO CLINIC,Physician,11.49699931441997
+66441,Junction City,KS,39.0299,-96.8396,95248,12726,81,Family Medicine,FHC FAMILY PRACTICE,Physician,11.464249794246172
+66615,Topeka,KS,39.0446,-95.7906,56946,18374,41,Family Medicine,CORPORATE VIEW CLINIC,Physician,10.949876289700272
+66414,Carbondale,KS,38.8206,-95.6871,39314,5581,5,Family Medicine,CARBONDALE CLINIC,Nurse Practitioner,10.579361404425617
+66547,Wamego,KS,39.21,-96.3153,38120,4713,15,Family Medicine,WAMEGO CLINIC,Physician,10.548520590372645
+66523,Osage City,KS,38.6269,-95.8303,27774,3159,5,Family Medicine,OSAGE CLINIC,Nurse Practitioner,10.23189161450783
+66066,Oskaloosa,KS,39.2152,-95.3135,23489,2338,3,Family Medicine,OSKALOOSA CLINIC,Physician Assistant,10.064330077652958
+66211,Shawnee Mission,KS,38.9248,-94.6379,18134,4827,125,Podiatry,*Unspecified,Physician,9.805599051717003
+66044,Lawrence,KS,39.0289,-95.2086,15446,5359,89,Anesthesiology,*Unspecified,Physician,9.64517008871425
+66622,Topeka,KS,39.0429,-95.7697,15122,7975,68,Orthopedics,*Unspecified,Physician Assistant,9.62397204275074
+66608,Topeka,KS,39.0858,-95.6867,10526,8592,5,Infusion Center,CROCO EXPRESS CARE,Nurse Practitioner,9.261698664251325
+66512,Meriden,KS,39.2038,-95.5476,10281,1898,6,Nurse Practitioner,MERIDEN CLINIC,Nurse Practitioner,9.23815007261545
+66516,Netawaka,KS,39.6063,-95.727,9604,659,1,Family Medicine,NETAWAKA CLINIC,Physician,9.170039075202657
+66204,Shawnee Mission,KS,38.9928,-94.6771,7857,3149,32,Family Medicine,*Unspecified,Physician Assistant,8.969287400118406
+66088,Valley Falls,KS,39.3484,-95.467,7600,898,2,Family Medicine,*Unspecified,Physician,8.936035096566041
+66509,Mayetta,KS,39.3489,-95.6928,6280,2156,5,Nurse Practitioner,*Unspecified,Nurse Practitioner,8.74528448245438
+66538,Seneca,KS,39.8473,-96.0316,5836,2275,15,Family Medicine,*Unspecified,Physician,8.671972245203792
+66612,Topeka,KS,39.0427,-95.6818,5792,2971,15,Family Medicine,*Unspecified,Nurse Practitioner,8.664405571096625
+66503,Manhattan,KS,39.2458,-96.6336,5384,1426,46,Family Medicine,*Unspecified,Physician,8.591372589590488
+66611,Topeka,KS,39.0142,-95.6982,5358,2861,15,Family Medicine,*Unspecified,Nurse Practitioner,8.58653266949485
+66223,Shawnee Mission,KS,38.8619,-94.661,5060,1678,9,Plastic/ Reconstructive Surgery,*Unspecified,Physician,8.529319371214077
+66436,Holton,KS,39.4436,-95.7525,4798,2391,33,Urology,*Unspecified,Physician,8.476162841858246
+66534,Sabetha,KS,39.8993,-95.8113,4133,1869,19,Family Medicine,*Unspecified,Physician,8.327000740241713
+67205,Wichita,KS,37.7639,-97.4269,4025,1232,2,Hematology/ Oncology,*Unspecified,Physician,8.300528606199737
+66049,Lawrence,KS,38.9704,-95.2769,3883,1378,48,Rheumatology,*Unspecified,Physician,8.264620829411216
+66160,Kansas City,KS,39.0966,-94.7495,3752,1411,266,Endocrinology,*Unspecified,Physician,8.23031079913502
+66521,Onaga,KS,39.4424,-96.3443,3331,1529,17,Family Medicine,*Unspecified,Physician,8.111328003286733
+66219,Shawnee Mission,KS,38.9553,-94.7799,2124,851,6,Orthopedics,*Unspecified,Physician,7.661527081358517
+66533,Rossville,KS,39.1451,-95.9553,2099,1997,2,Nurse Practitioner,901 INTERNAL MED,Nurse Practitioner,7.649692623711514
+66536,Saint Marys,KS,39.1987,-96.0683,1489,903,5,Family Medicine,*Unspecified,Physician,7.306531398939505
+67431,Chapman,KS,38.9722,-97.017,1101,321,3,,*Unspecified,Physician,7.004881989712859
+66607,Topeka,KS,39.0421,-95.6449,959,603,21,Family Medicine,*Unspecified,Nurse Practitioner,6.866933284461882
+66062,Olathe,KS,38.8733,-94.7752,745,374,7,Neurosurgery,*Unspecified,Physician Assistant,6.61472560020376
+66549,Westmoreland,KS,39.4138,-96.4374,629,392,3,Family Medicine,*Unspecified,Physician,6.4457198193855785
+66075,Pleasanton,KS,38.1823,-94.7057,612,134,1,Physical Therapy,*Unspecified,Physical Therapist,6.418364935936212
+66601,Topeka,KS,38.9881,-95.7807,480,401,6,Pathology,*Unspecified,Physician,6.175867270105761
+66215,Shawnee Mission,KS,38.949,-94.7405,418,178,33,Hematology/ Oncology,*Unspecified,Physician,6.037870919922137
+66440,Hoyt,KS,39.2552,-95.6867,342,215,1,,*Unspecified,Nurse Practitioner,5.8377304471659395
+66047,Lawrence,KS,38.9407,-95.2779,338,232,30,Internal Medicine,*Unspecified,Physician,5.82600010738045
+67401,Salina,KS,38.8237,-97.6421,327,176,67,Ophthalmology,*Unspecified,Physician,5.793013608384144
+66442,Fort Riley,KS,39.0619,-96.7873,320,158,33,Family Medicine,*Unspecified,Physician,5.771441123130016
+66101,Kansas City,KS,39.1157,-94.6271,250,155,1,Family Medicine,*Unspecified,Nurse Practitioner,5.5254529391317835
+66415,Centralia,KS,39.7381,-96.1486,236,139,2,Family Medicine,*Unspecified,Physician Assistant,5.4680601411351315
+66205,Shawnee Mission,KS,39.0312,-94.6308,229,112,46,Psychiatry,*Unspecified,Physician,5.438079308923196
+66550,Wetmore,KS,39.6428,-95.8231,228,117,1,,*Unspecified,Nurse Practitioner,5.43372200355424
+66094,White Cloud,KS,39.9627,-95.2982,219,126,1,,*Unspecified,Nurse Practitioner,5.393627546352362
+66002,Atchison,KS,39.5594,-95.1304,208,137,8,Emergency Medicine,*Unspecified,Physician Assistant,5.342334251964811
+66427,Frankfort,KS,39.7333,-96.5223,181,95,1,Family Medicine,*Unspecified,Physician Assistant,5.204006687076795
+66209,Shawnee Mission,KS,38.8984,-94.6377,149,101,20,Internal Medicine,*Unspecified,Physician,5.0106352940962555
+67879,Tribune,KS,38.4962,-101.7656,118,118,1,,*Unspecified,Physician,4.77912349311153
+66103,Kansas City,KS,39.0668,-94.6282,118,81,29,Neurology,*Unspecified,Physician,4.77912349311153
+66210,Shawnee Mission,KS,38.9273,-94.7143,117,79,20,Hematology/ Oncology,*Unspecified,Physician,4.770684624465665
+66609,Topeka,KS,38.9919,-95.6681,114,53,2,Psychiatry,*Unspecified,Nurse Practitioner,4.74493212836325
+67211,Wichita,KS,37.6662,-97.3165,112,16,1,,*Unspecified,Physician,4.727387818712341
+66097,Winchester,KS,39.3245,-95.2696,109,59,7,Family Medicine,*Unspecified,Nurse Practitioner,4.700480365792417
+66112,Kansas City,KS,39.116,-94.764,104,60,9,Neurosurgery,*Unspecified,Physician,4.653960350157523
+66610,Topeka,KS,38.9822,-95.7461,96,73,3,Physician Assistant,*Unspecified,Physician Assistant,4.574710978503383
+66061,Olathe,KS,38.8865,-94.8204,91,75,24,Gastroenterology,*Unspecified,Physician,4.5217885770490405
+66032,Garnett,KS,38.2859,-95.2594,87,75,1,,*Unspecified,Physician,4.477336814478207
+66434,Hiawatha,KS,39.7914,-95.6004,86,66,14,Obstetrics/ Gynecology,*Unspecified,Physician,4.465908118654584
+67226,Wichita,KS,37.7379,-97.2479,82,49,31,Obstetrics/ Gynecology,*Unspecified,Physician,4.418840607796598
+66603,Topeka,KS,39.0553,-95.6802,70,24,4,Pediatrics,*Unspecified,Physician,4.2626798770413155
+66067,Ottawa,KS,38.6142,-95.2745,67,49,16,Psychiatry,*Unspecified,Physician,4.219507705176107
+67214,Wichita,KS,37.7051,-97.3133,64,32,22,Pediatrics,*Unspecified,Physician,4.174387269895637
+66423,Eskridge,KS,38.8514,-96.1016,63,13,1,,*Unspecified,Nurse Practitioner,4.1588830833596715
+66839,Burlington,KS,38.2363,-95.7336,61,48,8,Family Medicine,*Unspecified,Physician,4.127134385045092
+67601,Hays,KS,38.8782,-99.3348,55,34,8,Cardiology,*Unspecified,Physician,4.02535169073515
+66046,Lawrence,KS,38.9369,-95.242,54,37,11,Family Medicine,*Unspecified,Physician,4.007333185232471
+67410,Abilene,KS,38.9371,-97.2063,45,17,9,Physical Medicine and Rehabilitation,*Unspecified,Physician,3.828641396489095
+67212,Wichita,KS,37.7007,-97.4383,40,21,5,Family Medicine,*Unspecified,Nurse Practitioner,3.713572066704308
+66213,Shawnee Mission,KS,38.8982,-94.7049,31,25,15,,*Unspecified,Physician,3.4657359027997265
+66212,Shawnee Mission,KS,38.9568,-94.6832,31,18,9,Pulmonology  (PCCM),*Unspecified,Nurse Practitioner,3.4657359027997265
+66048,Leavenworth,KS,39.3015,-94.9339,27,19,10,,*Unspecified,Physician,3.332204510175204
+67206,Wichita,KS,37.7038,-97.2253,23,20,11,Family Medicine,*Unspecified,Physician,3.1780538303479458
+66214,Shawnee Mission,KS,38.9649,-94.7209,21,13,6,,*Unspecified,Nurse Practitioner,3.091042453358316
+66206,Shawnee Mission,KS,38.958,-94.6193,19,8,5,Dentistry,*Unspecified,Physician,2.995732273553991
+67219,Wichita,KS,37.7719,-97.3175,17,6,1,Family Medicine,*Unspecified,Physician,2.8903717578961645
+66439,Horton,KS,39.6789,-95.5299,17,16,4,,*Unspecified,Nurse Practitioner,2.8903717578961645
+66207,Shawnee Mission,KS,38.9575,-94.6452,16,6,4,Family Medicine,*Unspecified,Physician,2.833213344056216
+66109,Kansas City,KS,39.1434,-94.7856,16,6,4,,*Unspecified,Physician,2.833213344056216
+67432,Clay Center,KS,39.3844,-97.1278,16,11,5,Pulmonology  (PCCM),*Unspecified,Physician,2.833213344056216
+67544,Hoisington,KS,38.4789,-98.7565,16,5,3,Family Medicine,*Unspecified,Physician,2.833213344056216
+67218,Wichita,KS,37.669,-97.2802,15,12,6,Obstetrics/ Gynecology,*Unspecified,Physician,2.772588722239781
+67208,Wichita,KS,37.7024,-97.2811,14,10,10,Obstetrics/ Gynecology,*Unspecified,Physician,2.70805020110221
+66106,Kansas City,KS,39.0694,-94.7178,13,10,6,Orthopedics,*Unspecified,Physician,2.6390573296152584
+67114,Newton,KS,38.0451,-97.3435,13,11,1,,*Unspecified,Nurse Practitioner,2.6390573296152584
+66102,Kansas City,KS,39.1132,-94.6693,13,3,2,,*Unspecified,Physician,2.6390573296152584
+66217,Shawnee Mission,KS,39.0146,-94.7709,12,10,7,Family Medicine,*Unspecified,Physician,2.5649493574615367
+66872,White City,KS,38.789,-96.7637,11,6,1,,*Unspecified,Nurse Practitioner,2.4849066497880004
+66846,Council Grove,KS,38.6959,-96.5469,11,11,5,,*Unspecified,Physician,2.4849066497880004
+66531,Riley,KS,39.3005,-96.8222,11,6,2,Family Medicine,*Unspecified,Nurse Practitioner,2.4849066497880004
+66071,Paola,KS,38.572,-94.8937,10,9,3,Family Medicine,*Unspecified,Nurse Practitioner,2.3978952727983707
+66621,Topeka,KS,39.0333,-95.7015,10,10,1,,*Unspecified,Nurse Practitioner,2.3978952727983707
+66425,Fairview,KS,39.8445,-95.711,9,5,2,,*Unspecified,Physician Assistant,2.302585092994046
+66208,Shawnee Mission,KS,38.9938,-94.634,9,8,4,,*Unspecified,Physician,2.302585092994046
+67449,Herington,KS,38.6767,-96.8941,9,8,4,,*Unspecified,Nurse Practitioner,2.302585092994046
+66227,Shawnee Mission,KS,38.9747,-94.8681,8,7,5,,*Unspecified,Physician,2.1972245773362196
+66104,Kansas City,KS,39.1375,-94.6792,8,5,1,,*Unspecified,Nurse Practitioner,2.1972245773362196
+66018,De Soto,KS,38.9462,-94.9714,7,6,4,Family Medicine,*Unspecified,Nurse Practitioner,2.0794415416798357
+66203,Shawnee Mission,KS,39.0215,-94.7055,7,6,5,,*Unspecified,Physician Assistant,2.0794415416798357
+66221,Shawnee Mission,KS,38.8636,-94.7103,7,5,4,Orthopedics,*Unspecified,Physician,2.0794415416798357
+66226,Shawnee Mission,KS,39.0178,-94.8627,6,4,4,,*Unspecified,Physician,1.9459101490553132
+67002,Andover,KS,37.6985,-97.1179,6,4,1,,*Unspecified,Physician,1.9459101490553132
+66043,Lansing,KS,39.2502,-94.8994,6,5,4,,*Unspecified,Physician,1.9459101490553132
+66968,Washington,KS,39.8223,-97.0484,6,5,2,Family Medicine,*Unspecified,Physician,1.9459101490553132
+67502,Hutchinson,KS,38.1156,-97.8937,6,5,5,,*Unspecified,Physician,1.9459101490553132
+66852,Gridley,KS,38.1012,-95.8874,5,5,1,Dentistry,*Unspecified,Dentist,1.791759469228055
+67456,Lindsborg,KS,38.5761,-97.6739,5,3,2,,*Unspecified,Nurse Practitioner,1.791759469228055
+66216,Shawnee Mission,KS,39.0147,-94.7414,5,4,3,,*Unspecified,Physician,1.791759469228055
+67054,Greensburg,KS,37.6084,-99.3011,4,1,1,,*Unspecified,Physician Assistant,1.6094379124341003
+66224,Shawnee Mission,KS,38.8591,-94.6314,4,2,1,,*Unspecified,Physician,1.6094379124341003
+66027,Fort Leavenworth,KS,39.3485,-94.9265,4,3,3,,*Unspecified,Nurse Practitioner,1.6094379124341003
+66501,Mc Farland,KS,39.0535,-96.2379,4,4,1,,*Unspecified,Nurse Practitioner,1.6094379124341003
+66508,Marysville,KS,39.8428,-96.6422,4,4,3,,*Unspecified,Physician,1.6094379124341003
+66407,Belvue,KS,39.2273,-96.1866,3,3,1,,*Unspecified,Physician,1.3862943611198906
+66720,Chanute,KS,37.6749,-95.457,3,2,2,,*Unspecified,Physician,1.3862943611198906
+66861,Marion,KS,38.3554,-97.0204,3,1,1,,*Unspecified,Physician,1.3862943611198906
+66411,Blue Rapids,KS,39.675,-96.636,3,2,2,,*Unspecified,Nurse Practitioner,1.3862943611198906
+67880,Ulysses,KS,37.5792,-101.3488,3,1,1,Family Medicine,*Unspecified,Nurse Practitioner,1.3862943611198906
+67642,Hill City,KS,39.3566,-99.8429,3,2,2,,*Unspecified,Physician,1.3862943611198906
+66935,Belleville,KS,39.8241,-97.629,3,2,1,,*Unspecified,Physician,1.3862943611198906
+67042,El Dorado,KS,37.8226,-96.8543,3,3,3,Orthopedics,*Unspecified,Physician,1.3862943611198906
+67846,Garden City,KS,37.9769,-100.8621,3,3,2,Physician Assistant,*Unspecified,Physician,1.3862943611198906
+67801,Dodge City,KS,37.7569,-100.0241,2,2,2,,*Unspecified,Nurse Practitioner,1.0986122886681098
+66616,Topeka,KS,39.0645,-95.6413,2,2,2,,*Unspecified,Nurse Practitioner,1.0986122886681098
+67460,Mcpherson,KS,38.3763,-97.6702,2,2,2,Family Medicine,*Unspecified,Nurse Practitioner,1.0986122886681098
+66202,Shawnee Mission,KS,39.0248,-94.6826,2,2,2,,*Unspecified,Physician,1.0986122886681098
+67402,Salina,KS,38.7836,-97.6504,2,2,2,,*Unspecified,Nurse Practitioner,1.0986122886681098
+66035,Highland,KS,39.8608,-95.2583,2,1,1,,*Unspecified,Nurse Practitioner,1.0986122886681098
+67301,Independence,KS,37.2292,-95.7165,2,2,2,,*Unspecified,Nurse Practitioner,1.0986122886681098
+67337,Coffeyville,KS,37.0441,-95.6328,2,2,1,,*Unspecified,Nurse Practitioner,1.0986122886681098
+66025,Eudora,KS,38.933,-95.1022,2,2,1,,*Unspecified,Physician,1.0986122886681098
+67037,Derby,KS,37.553,-97.2549,2,1,1,Orthopedics,*Unspecified,Physician,1.0986122886681098
+66736,Fredonia,KS,37.5717,-95.7484,2,1,2,,*Unspecified,Nurse Practitioner,1.0986122886681098
+66901,Concordia,KS,39.5516,-97.6568,2,1,1,,*Unspecified,Physician,1.0986122886681098
+66749,Iola,KS,37.8858,-95.3911,2,2,2,,*Unspecified,Nurse Practitioner,1.0986122886681098
+66783,Yates Center,KS,37.8801,-95.7289,2,2,1,,*Unspecified,Physician,1.0986122886681098
+67207,Wichita,KS,37.671,-97.2179,2,2,2,,*Unspecified,Physician,1.0986122886681098
+67550,Larned,KS,38.1946,-99.101,1,1,1,,*Unspecified,Physician,0.6931471805599453
+66401,Alma,KS,39.0092,-96.2923,1,1,1,,*Unspecified,Physician,0.6931471805599453
+67864,Meade,KS,37.2821,-100.3364,1,1,1,,*Unspecified,Physician Assistant,0.6931471805599453
+67701,Colby,KS,39.383,-101.0442,1,1,1,,*Unspecified,Physician,0.6931471805599453
+67124,Pratt,KS,37.6502,-98.73,1,1,1,,*Unspecified,Physician,0.6931471805599453
+67203,Wichita,KS,37.7048,-97.3638,1,1,1,,*Unspecified,Physician,0.6931471805599453
+67579,Sterling,KS,38.2126,-98.2055,1,1,1,,*Unspecified,Physician,0.6931471805599453
+67572,Ransom,KS,38.64,-99.9267,1,1,1,,*Unspecified,Nurse Practitioner,0.6931471805599453
+67220,Wichita,KS,37.7667,-97.2805,1,1,1,,*Unspecified,Physician,0.6931471805599453
+67204,Wichita,KS,37.7488,-97.3566,1,1,1,,*Unspecified,Nurse Practitioner,0.6931471805599453
+66033,Greeley,KS,38.3524,-95.1188,1,1,1,,*Unspecified,Nurse Practitioner,0.6931471805599453
+67439,Ellsworth,KS,38.7312,-98.2057,1,1,1,Family Medicine,*Unspecified,Physician,0.6931471805599453
+66006,Baldwin City,KS,38.7953,-95.2276,1,1,1,Family Medicine,*Unspecified,Physician,0.6931471805599453
+66012,Bonner Springs,KS,39.0672,-94.9227,1,1,1,Family Medicine,*Unspecified,Physician,0.6931471805599453
+66111,Kansas City,KS,39.0803,-94.7806,1,1,1,,*Unspecified,Physician,0.6931471805599453
+67216,Wichita,KS,37.6223,-97.3136,1,1,1,,*Unspecified,Nurse Practitioner,0.6931471805599453
+67010,Augusta,KS,37.6836,-96.9648,1,1,1,,*Unspecified,Physician,0.6931471805599453
+66030,Gardner,KS,38.8075,-94.9157,1,1,1,,*Unspecified,Physician,0.6931471805599453
+66967,Smith Center,KS,39.8042,-98.7842,1,1,1,Family Medicine,*Unspecified,Physician,0.6931471805599453

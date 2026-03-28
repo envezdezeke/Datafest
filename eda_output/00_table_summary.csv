@@ -1,0 +1,8 @@
+table,rows,cols,mem_mb
+encounters,7675801,31,5236.8
+patients,947685,12,643.5
+diagnosis,1531262,5,611.8
+providers,299075,8,137.4
+departments,11597,9,5.3
+social_determinants,3977901,5,925.0
+tigercensus,2463,4,0.1

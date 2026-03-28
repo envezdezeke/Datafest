@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regression to the Mean Streets | Roadmap</title>
+  <style>
+    :root { --bg:#f4efe7; --bg-2:#efe5d8; --panel:rgba(255,251,245,.84); --ink:#1d2a2f; --muted:#5a6a6d; --accent:#0d6c63; --line:rgba(29,42,47,.12); --shadow:0 20px 50px rgba(35,41,44,.12); }
+    [data-theme="dark"] { --bg:#10181c; --bg-2:#182229; --panel:rgba(20,29,34,.88); --ink:#edf2ef; --muted:#a7b7b8; --accent:#6fd3c7; --line:rgba(237,242,239,.1); --shadow:0 20px 50px rgba(0,0,0,.3); }
+    *{box-sizing:border-box} body{margin:0;font-family:"Avenir Next","Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at top left, rgba(200,107,60,.14), transparent 26%),radial-gradient(circle at top right, rgba(13,108,99,.16), transparent 28%),linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);line-height:1.55}
+    .shell,.topbar-inner{width:min(1180px,calc(100vw - 28px));margin:0 auto}.shell{padding-bottom:40px}.topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb, var(--bg) 76%, transparent);border-bottom:1px solid var(--line)}.topbar-inner{padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--accent)}.nav{display:flex;gap:10px;flex-wrap:wrap}.nav a,.theme-toggle{text-decoration:none;color:var(--muted);font-size:14px;padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:var(--panel)}.nav a.active{color:var(--ink)}.theme-toggle{cursor:pointer;font:inherit}
+    .card{background:var(--panel);border:1px solid color-mix(in srgb, white 55%, var(--line));border-radius:30px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}.hero,.grid{display:grid;gap:18px}.hero{padding:42px 0 22px}.hero-card,.section,.step{padding:30px}.eyebrow{display:inline-block;margin-bottom:14px;color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}h1,h2,h3{margin:0;line-height:1.08}h1{font-size:clamp(36px,6vw,56px)}h2{font-size:28px;margin-bottom:10px}h3{font-size:20px;margin-bottom:8px}p{margin:0 0 14px;color:var(--muted)}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:999px;background:rgba(13,108,99,.12);color:var(--accent);font-weight:700;margin-bottom:12px}ul{margin:0;padding-left:18px}li{margin-bottom:8px}
+    @media (max-width: 960px){.grid{grid-template-columns:1fr}.hero-card,.section,.step{padding:22px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><div class="brand">Regression to the Mean Streets</div><div class="nav"><a href="eda_report.html">Overview</a><a href="opportunities.html">Opportunities</a><a href="strategy_model.html">Strategy Model</a><a href="evidence.html">Evidence</a><a class="active" href="roadmap.html">Roadmap</a><button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button></div></div></div>
+  <div class="shell">
+    <section class="hero"><div class="card hero-card"><div class="eyebrow">Action Roadmap</div><h1>What To Do Next</h1><p>This page turns the strategy into a presentation plan and a next-analysis plan so your team can move from polished dashboard to final recommendation deck.</p></div></section>
+    <section class="grid">
+      <div class="card step"><div class="num">1</div><h3>Lead with the strongest story</h3><p>Open with follow-up gaps after acute or fracture-heavy journeys.</p><ul><li>Use the gap distribution chart.</li><li>Frame the outcome as reduced delayed care.</li><li>Tie it to scheduling or outreach.</li></ul></div>
+      <div class="card step"><div class="num">2</div><h3>Add a second strategic lane</h3><p>Use high-utilizer segmentation as a system-efficiency and coordination story.</p><ul><li>Show how the mean exceeds the median.</li><li>Distinguish chronic complexity from fragmented repeat use.</li><li>Recommend segmented interventions.</li></ul></div>
+      <div class="card step"><div class="num">3</div><h3>Use SDOH carefully</h3><p>Keep it as a supporting overlay among screened patients.</p><ul><li>Remove unspecified responses.</li><li>Focus on transportation, food, and financial strain.</li><li>Avoid population-wide claims.</li></ul></div>
+    </section>
+    <section class="card section"><div class="eyebrow">Best Next Analyses</div><h2>High-value extensions</h2><ul><li>Build a ranked table of median days to next encounter by diagnosis group.</li><li>Create department transition paths such as ED to imaging to orthopedics.</li><li>Construct patient-level utilization segments and compare their department footprints.</li><li>Add confidence intervals or simple statistical checks for the biggest subgroup findings.</li></ul></section>
+  </div>
+  <script>(function(){const root=document.documentElement;const button=document.querySelector('[data-theme-toggle]');const saved=localStorage.getItem('rtms-theme');if(saved==='dark')root.setAttribute('data-theme','dark');function sync(){button.textContent=root.getAttribute('data-theme')==='dark'?'Light mode':'Dark mode';}button.addEventListener('click',function(){const dark=root.getAttribute('data-theme')==='dark';if(dark){root.removeAttribute('data-theme');localStorage.setItem('rtms-theme','light');}else{root.setAttribute('data-theme','dark');localStorage.setItem('rtms-theme','dark');}sync();});sync();}());</script>
+</body>
+</html>

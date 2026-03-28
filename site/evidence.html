@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regression to the Mean Streets | Evidence</title>
+  <style>
+    :root { --bg:#f4efe7; --bg-2:#efe5d8; --panel:rgba(255,251,245,.84); --ink:#1d2a2f; --muted:#5a6a6d; --accent:#0d6c63; --line:rgba(29,42,47,.12); --shadow:0 20px 50px rgba(35,41,44,.12); }
+    [data-theme="dark"] { --bg:#10181c; --bg-2:#182229; --panel:rgba(20,29,34,.88); --ink:#edf2ef; --muted:#a7b7b8; --accent:#6fd3c7; --line:rgba(237,242,239,.1); --shadow:0 20px 50px rgba(0,0,0,.3); }
+    *{box-sizing:border-box} body{margin:0;font-family:"Avenir Next","Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at top left, rgba(200,107,60,.14), transparent 26%),radial-gradient(circle at top right, rgba(13,108,99,.16), transparent 28%),linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);line-height:1.55}
+    .shell,.topbar-inner{width:min(1180px,calc(100vw - 28px));margin:0 auto}.shell{padding-bottom:40px}.topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb, var(--bg) 76%, transparent);border-bottom:1px solid var(--line)}.topbar-inner{padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--accent)}.nav{display:flex;gap:10px;flex-wrap:wrap}.nav a,.theme-toggle{text-decoration:none;color:var(--muted);font-size:14px;padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:var(--panel)}.nav a.active{color:var(--ink)}.theme-toggle{cursor:pointer;font:inherit}
+    .card{background:var(--panel);border:1px solid color-mix(in srgb, white 55%, var(--line));border-radius:30px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}.hero,.charts{display:grid;gap:18px}.hero{padding:42px 0 22px}.hero-card,.section{padding:32px}.eyebrow{display:inline-block;margin-bottom:14px;color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}h1,h2,h3{margin:0;line-height:1.08}h1{font-size:clamp(36px,6vw,56px)}h2{font-size:28px;margin-bottom:10px}h3{font-size:20px;margin-bottom:8px}p{margin:0 0 14px;color:var(--muted)}.charts{grid-template-columns:repeat(2,minmax(0,1fr))}figure{margin:0;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:var(--panel)}figure img{width:100%;display:block}figcaption{padding:16px 18px 18px}
+    @media (max-width: 960px){.charts{grid-template-columns:1fr}.hero-card,.section{padding:22px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><div class="brand">Regression to the Mean Streets</div><div class="nav"><a href="eda_report.html">Overview</a><a href="opportunities.html">Opportunities</a><a href="strategy_model.html">Strategy Model</a><a class="active" href="evidence.html">Evidence</a><a href="roadmap.html">Roadmap</a><button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button></div></div></div>
+  <div class="shell">
+    <section class="hero"><div class="card hero-card"><div class="eyebrow">Evidence Wall</div><h1>Charts That Support The Story</h1><p>These visuals are the backbone of the recommendation narrative. Use them to show that the strategy themes come directly from the data rather than from generic healthcare advice.</p></div></section>
+    <section class="charts">
+      <figure class="card"><img src="../eda_output/enc_01_volume_by_year.png" alt="Encounter volume by year" /><figcaption><h3>System Scale</h3><p>Establishes the operational relevance of any workflow recommendation.</p></figcaption></figure>
+      <figure class="card"><img src="../eda_output/diag_01_top_groups.png" alt="Top diagnosis groups" /><figcaption><h3>Fracture-heavy clinical mix</h3><p>Provides a clinically coherent anchor for the strategy.</p></figcaption></figure>
+      <figure class="card"><img src="../eda_output/journey_02_encounters_by_diagnosis_group.png" alt="Journey length by diagnosis group" /><figcaption><h3>Different journeys need different interventions</h3><p>Shows that patient pathways vary sharply by diagnosis group.</p></figcaption></figure>
+      <figure class="card"><img src="../eda_output/journey_03_inter_encounter_gaps.png" alt="Inter encounter gaps" /><figcaption><h3>Follow-up delay</h3><p>The strongest evidence for missed-care or delayed-care intervention design.</p></figcaption></figure>
+      <figure class="card"><img src="../eda_output/demo_02_median_enc_by_race.png" alt="Median encounters by race" /><figcaption><h3>Equity framing</h3><p>Keep subgroup comparisons at the patient level, not raw encounter totals.</p></figcaption></figure>
+      <figure class="card"><img src="../eda_output/sdoh_03_rollout_timeline.png" alt="SDOH rollout timeline" /><figcaption><h3>Coverage caution</h3><p>Shows why SDOH should be framed as a screened subset rather than full-population evidence.</p></figcaption></figure>
+    </section>
+  </div>
+  <script>(function(){const root=document.documentElement;const button=document.querySelector('[data-theme-toggle]');const saved=localStorage.getItem('rtms-theme');if(saved==='dark')root.setAttribute('data-theme','dark');function sync(){button.textContent=root.getAttribute('data-theme')==='dark'?'Light mode':'Dark mode';}button.addEventListener('click',function(){const dark=root.getAttribute('data-theme')==='dark';if(dark){root.removeAttribute('data-theme');localStorage.setItem('rtms-theme','light');}else{root.setAttribute('data-theme','dark');localStorage.setItem('rtms-theme','dark');}sync();});sync();}());</script>
+</body>
+</html>

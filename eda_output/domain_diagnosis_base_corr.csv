@@ -1,0 +1,12 @@
+,Alcohol Use,Depression,Financial Resource Strain,Food insecurity,Housing Stability,Transportation Needs,Utilities,intimate partner violance,physical activity,social connections,stress
+Alcohol Use,1.0,-0.033,-0.027,-0.054,-0.023,-0.047,-0.04,0.019,-0.183,-0.109,0.049
+Depression,-0.033,1.0,0.164,0.236,0.17,0.154,0.256,0.166,0.064,0.212,0.556
+Financial Resource Strain,-0.027,0.164,1.0,0.53,0.323,0.406,0.376,0.251,0.055,0.176,0.226
+Food insecurity,-0.054,0.236,0.53,1.0,0.315,0.441,0.493,0.276,0.058,0.211,0.276
+Housing Stability,-0.023,0.17,0.323,0.315,1.0,0.289,0.247,0.19,-0.029,0.161,0.171
+Transportation Needs,-0.047,0.154,0.406,0.441,0.289,1.0,0.29,0.231,0.078,0.178,0.189
+Utilities,-0.04,0.256,0.376,0.493,0.247,0.29,1.0,0.191,0.069,0.218,0.297
+intimate partner violance,0.019,0.166,0.251,0.276,0.19,0.231,0.191,1.0,0.001,0.126,0.209
+physical activity,-0.183,0.064,0.055,0.058,-0.029,0.078,0.069,0.001,1.0,0.231,0.073
+social connections,-0.109,0.212,0.176,0.211,0.161,0.178,0.218,0.126,0.231,1.0,0.152
+stress,0.049,0.556,0.226,0.276,0.171,0.189,0.297,0.209,0.073,0.152,1.0

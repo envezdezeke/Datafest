@@ -1,0 +1,9 @@
+column,dtype,n_null,n_unspecified,pct_missing_or_unspec,n_unique
+DurableKey,float64,0,0,0.0,299075
+ClinicianTitle,object,113067,30725,48.1,2939
+OfficeAddress,object,30335,21710,17.4,169660
+OfficeCity,object,30344,21710,17.4,11066
+OfficePostalCode,object,30362,21710,17.4,128007
+PrimaryDepartment,object,0,295979,99.0,465
+PrimarySpecialty,object,37856,247003,95.2,145
+Type,object,0,25016,8.4,69

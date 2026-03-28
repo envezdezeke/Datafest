@@ -1,0 +1,6 @@
+from_key,from_unique,to_key,to_unique,match_pct
+encounters.PatientDurableKey,359760,patients.DurableKey,947685,95.80265303907697
+encounters.DepartmentKey,284,departments.DepartmentKey,11597,100.0
+encounters.PrimaryDiagnosisKey,92194,diagnosis.DiagnosisKey,1382555,100.0
+encounters.ProviderDurableKey,6150,providers.DurableKey,299075,99.9999739440874
+social_determinants.PatientDurableKey,212357,patients.DurableKey,947685,99.61753698747154

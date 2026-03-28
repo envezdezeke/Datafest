@@ -1,0 +1,12 @@
+metric,value
+hays_patients,1462.0
+hays_encounters,373.0
+mean_encounters_per_patient,4.34
+median_encounters_per_patient,2.0
+screened_patients,8.0
+positive_transport_patients,0.0
+positive_rate_screened_pct,0.0
+positive_rate_all_pct,0.0
+mean_distance_miles,192.17
+median_distance_miles,194.52
+mode_distance_miles_rounded,195.0

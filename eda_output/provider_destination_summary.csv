@@ -1,0 +1,247 @@
+zip5,encounter_count,unique_patients,unique_providers,top_specialty,top_department,top_diagnosis_group,city,state,lat,lon,encounters_per_provider,patients_per_provider
+66606,2094479,194977,501,Family Medicine,HEART CENTER CARDIOLOGY,Type 2 diabetes mellitus,Topeka,KS,39.0583,-95.7095,4180.6,389.2
+66614,477143,100381,121,Family Medicine,ASBURY CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Topeka,KS,39.0154,-95.7469,3943.3,829.6
+66604,463467,136266,239,Emergency Medicine,EMERGENCY DEPARTMENT,"Encounter for general examination without complaint, suspected or reported diagnosis",Topeka,KS,39.0405,-95.7178,1939.2,570.2
+66801,186474,23635,63,Internal Medicine,EMPORIA INTERNAL MED,"Encounter for general examination without complaint, suspected or reported diagnosis",Emporia,KS,38.4184,-96.1871,2959.9,375.2
+66441,182083,30137,85,Family Medicine,FHC FAMILY PRACTICE,"Encounter for general examination without complaint, suspected or reported diagnosis",Junction City,KS,39.0299,-96.8396,2142.2,354.6
+66502,180875,38688,162,Family Medicine,MHK PRIMARY CARE,"Encounter for general examination without complaint, suspected or reported diagnosis",Manhattan,KS,39.1938,-96.5858,1116.5,238.8
+66618,146161,28257,24,Family Medicine,NORTH FIELDING CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Topeka,KS,39.1329,-95.7023,6090.0,1177.4
+66605,135738,51695,18,Family Medicine,CROCO CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Topeka,KS,39.0151,-95.6439,7541.0,2871.9
+66615,74709,26176,44,Family Medicine,CORPORATE VIEW CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Topeka,KS,39.0446,-95.7906,1697.9,594.9
+66414,56243,7954,5,Family Medicine,CARBONDALE CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Carbondale,KS,38.8206,-95.6871,11248.6,1590.8
+66547,55080,7329,15,Family Medicine,WAMEGO CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Wamego,KS,39.21,-96.3153,3672.0,488.6
+66523,39527,4758,6,Family Medicine,OSAGE CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Osage City,KS,38.6269,-95.8303,6587.8,793.0
+66066,35926,3654,3,Family Medicine,OSKALOOSA CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Oskaloosa,KS,39.2152,-95.3135,11975.3,1218.0
+66211,24401,6524,141,Podiatry,*Unspecified,Fibroblastic disorders,Shawnee Mission,KS,38.9248,-94.6379,173.1,46.3
+66622,23745,11444,88,Orthopedics,*Unspecified,Essential,Topeka,KS,39.0429,-95.7697,269.8,130.0
+66044,20673,7471,107,Anesthesiology,*Unspecified,Dorsalgia,Lawrence,KS,39.0289,-95.2086,193.2,69.8
+66088,16041,2057,4,Family Medicine,*Unspecified,Long term,Valley Falls,KS,39.3484,-95.467,4010.2,514.2
+66608,15817,12646,6,Infusion Center,CROCO EXPRESS CARE,Acute upper respiratory infections of multiple and unspecified sites,Topeka,KS,39.0858,-95.6867,2636.2,2107.7
+66512,14350,2709,6,Nurse Practitioner,MERIDEN CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Meriden,KS,39.2038,-95.5476,2391.7,451.5
+66516,13813,1003,1,Family Medicine,NETAWAKA CLINIC,"Encounter for general examination without complaint, suspected or reported diagnosis",Netawaka,KS,39.6063,-95.727,13813.0,1003.0
+66204,12742,5375,42,Family Medicine,*Unspecified,"Major depressive disorder, recurrent",Shawnee Mission,KS,38.9928,-94.6771,303.4,128.0
+73116,12706,4267,1,Dermatology,*Unspecified,Neoplasm of uncertain behavior of other and unspecified sites,Oklahoma City,OK,35.5463,-97.5642,12706.0,4267.0
+66538,10969,4453,17,Family Medicine,*Unspecified,Atrial fibrillation and flutter,Seneca,KS,39.8473,-96.0316,645.2,261.9
+66612,10512,5069,16,Family Medicine,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Topeka,KS,39.0427,-95.6818,657.0,316.8
+50314,9633,1863,2,Hematology/ Oncology,*Unspecified,Malignant neoplasm of bronchus and lung,Des Moines,IA,41.603,-93.633,4816.5,931.5
+81301,9481,2942,1,Urology,*Unspecified,Abnormal tumor markers,Durango,CO,37.2874,-107.8617,9481.0,2942.0
+66436,8793,4450,34,Family Medicine,*Unspecified,Pain associated with micturition,Holton,KS,39.4436,-95.7525,258.6,130.9
+66509,8670,2767,6,Nurse Practitioner,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Mayetta,KS,39.3489,-95.6928,1445.0,461.2
+66503,8454,2346,48,Family Medicine,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Manhattan,KS,39.2458,-96.6336,176.1,48.9
+66534,7788,3663,20,Family Medicine,*Unspecified,Neoplasm of uncertain behavior of other and unspecified sites,Sabetha,KS,39.8993,-95.8113,389.4,183.2
+66611,7608,3962,17,Family Medicine,*Unspecified,Presence of cardiac and vascular implants and grafts,Topeka,KS,39.0142,-95.6982,447.5,233.1
+66223,7403,2292,12,Plastic/ Reconstructive Surgery,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Shawnee Mission,KS,38.8619,-94.661,616.9,191.0
+67205,7394,1856,7,Hematology/ Oncology,*Unspecified,Iron deficiency anemia,Wichita,KS,37.7639,-97.4269,1056.3,265.1
+78404,6870,1492,1,Rheumatology,*Unspecified,Rheumatoid arthritis with rheumatoid factor,Corpus Christi,TX,27.7683,-97.4013,6870.0,1492.0
+95119,6389,2852,1,Allergy/Immunology,*Unspecified,"Chronic rhinitis, nasopharyngitis and pharyngitis",San Jose,CA,37.2329,-121.7875,6389.0,2852.0
+35672,6336,1373,1,Family Medicine,FHC FAMILY PRACTICE,"Encounter for general examination without complaint, suspected or reported diagnosis",Town Creek,AL,34.6491,-87.4262,6336.0,1373.0
+66521,6239,2960,17,Family Medicine,*Unspecified,Vitamin D deficiency,Onaga,KS,39.4424,-96.3443,367.0,174.1
+66160,5757,2036,314,Endocrinology,EMPORIA ENDOCRINOLOGY,Type 2 diabetes mellitus,Kansas City,KS,39.0966,-94.7495,18.3,6.5
+66049,5617,2052,52,Rheumatology,*Unspecified,Other rheumatoid arthritis,Lawrence,KS,38.9704,-95.2769,108.0,39.5
+75020,4915,1703,1,Internal Medicine,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Denison,TX,33.745,-96.5496,4915.0,1703.0
+66219,3299,1245,7,Orthopedics,*Unspecified,Presence of other functional implants,Shawnee Mission,KS,38.9553,-94.7799,471.3,177.9
+66533,3034,2808,2,Nurse Practitioner,901 INTERNAL MED,Acute pharyngitis,Rossville,KS,39.1451,-95.9553,1517.0,1404.0
+66536,2855,1842,5,Family Medicine,*Unspecified,Cough,Saint Marys,KS,39.1987,-96.0683,571.0,368.4
+67431,2217,714,3,,*Unspecified,Encounter for screening for malignant neoplasms,Chapman,KS,38.9722,-97.017,739.0,238.0
+67879,2052,2023,1,,*Unspecified,Encounter for screening for infectious and parasitic diseases,Tribune,KS,38.4962,-101.7656,2052.0,2023.0
+66607,1706,1054,23,Family Medicine,*Unspecified,Long term,Topeka,KS,39.0421,-95.6449,74.2,45.8
+78665,1612,401,1,Hematology/ Oncology,*Unspecified,Iron deficiency anemia,Sandy,TX,30.5449,-97.6438,1612.0,401.0
+64111,1605,866,124,Cardiology,*Unspecified,Other disorders of veins,Kansas City,MO,39.0565,-94.5929,12.9,7.0
+66549,1513,919,3,Family Medicine,*Unspecified,Encounter for administrative examination,Westmoreland,KS,39.4138,-96.4374,504.3,306.3
+81505,1460,574,1,General Surgery,*Unspecified,Inguinal hernia,Grand Junction,CO,39.1071,-108.5968,1460.0,574.0
+66062,1090,523,13,Neurosurgery,*Unspecified,Dorsalgia,Olathe,KS,38.8733,-94.7752,83.8,40.2
+29118,1078,380,1,Obstetrics/ Gynecology,FHC OBGYN,Weeks of gestation,Orangeburg,SC,33.5675,-80.9248,1078.0,380.0
+66075,837,170,1,Physical Therapy,*Unspecified,Dorsalgia,Pleasanton,KS,38.1823,-94.7057,837.0,170.0
+65201,793,525,3,Family Medicine,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Columbia,MO,38.9382,-92.3049,264.3,175.0
+64108,780,532,165,Pediatric Neurology,*Unspecified,Other functional intestinal disorders,Kansas City,MO,39.0837,-94.5868,4.7,3.2
+66442,721,366,61,Family Medicine,*Unspecified,Dorsalgia,Fort Riley,KS,39.0619,-96.7873,11.8,6.0
+66601,679,576,6,Pathology,*Unspecified,Multiple myeloma and malignant plasma cell neoplasms,Topeka,KS,38.9881,-95.7807,113.2,96.0
+67401,658,317,95,Ophthalmology,*Unspecified,Dorsalgia,Salina,KS,38.8237,-97.6421,6.9,3.3
+66215,631,263,41,Hematology/ Oncology,*Unspecified,Malignant neoplasm of corpus uteri,Shawnee Mission,KS,38.949,-94.7405,15.4,6.4
+66440,604,386,1,,*Unspecified,Encounter for screening for infectious and parasitic diseases,Hoyt,KS,39.2552,-95.6867,604.0,386.0
+66101,573,332,1,Family Medicine,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Kansas City,KS,39.1157,-94.6271,573.0,332.0
+66047,537,371,33,Internal Medicine,*Unspecified,"Other joint disorder, not elsewhere classified",Lawrence,KS,38.9407,-95.2779,16.3,11.2
+48375,473,80,1,,*Unspecified,Long term,Novi,MI,42.4604,-83.4577,473.0,80.0
+66550,454,207,1,,*Unspecified,Open wound of knee and lower leg,Wetmore,KS,39.6428,-95.8231,454.0,207.0
+66094,443,266,2,,*Unspecified,Acute upper respiratory infections of multiple and unspecified sites,White Cloud,KS,39.9627,-95.2982,221.5,133.0
+66002,437,268,17,Emergency Medicine,*Unspecified,Other disorders of urinary system,Atchison,KS,39.5594,-95.1304,25.7,15.8
+67211,433,66,3,Family Medicine,*Unspecified,Heart failure,Wichita,KS,37.6662,-97.3165,144.3,22.0
+66415,409,261,2,Family Medicine,*Unspecified,Encounter for screening for malignant neoplasms,Centralia,KS,39.7381,-96.1486,204.5,130.5
+66205,350,170,50,Psychiatry,*Unspecified,Malignant neoplasm of liver and intrahepatic bile ducts,Shawnee Mission,KS,39.0312,-94.6308,7.0,3.4
+66427,340,194,1,Family Medicine,*Unspecified,Other disorders of urinary system,Frankfort,KS,39.7333,-96.5223,340.0,194.0
+66209,303,188,28,Internal Medicine,*Unspecified,Other disorders of urinary system,Shawnee Mission,KS,38.8984,-94.6377,10.8,6.7
+66210,256,175,25,Hematology/ Oncology,*Unspecified,Conduct disorders,Shawnee Mission,KS,38.9273,-94.7143,10.2,7.0
+66434,255,198,17,Obstetrics/ Gynecology,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Hiawatha,KS,39.7914,-95.6004,15.0,11.6
+64081,224,103,1,Family Medicine,*Unspecified,Heart failure,Lees Summit,MO,38.9142,-94.4073,224.0,103.0
+66609,212,105,2,Psychiatry,*Unspecified,Conduct disorders,Topeka,KS,38.9919,-95.6681,106.0,52.5
+27607,191,140,1,Neurology,*Unspecified,Dorsalgia,Raleigh,NC,35.8014,-78.6877,191.0,140.0
+66097,188,108,9,Family Medicine,*Unspecified,Type 2 diabetes mellitus,Winchester,KS,39.3245,-95.2696,20.9,12.0
+55905,186,38,38,Gastroenterology,*Unspecified,Transplanted organ and tissue status,Rochester,MN,44.0225,-92.4668,4.9,1.0
+66423,166,43,1,,*Unspecified,Long term,Eskridge,KS,38.8514,-96.1016,166.0,43.0
+66032,164,131,2,,*Unspecified,Other rheumatoid arthritis,Garnett,KS,38.2859,-95.2594,82.0,65.5
+68198,162,26,20,Pulmonology  (PCCM),*Unspecified,Transplanted organ and tissue status,Omaha,NE,41.2917,-96.1711,8.1,1.3
+66061,158,129,33,Gastroenterology,*Unspecified,Dorsalgia,Olathe,KS,38.8865,-94.8204,4.8,3.9
+66103,153,105,34,Neurology,*Unspecified,Benign neoplasm of brain and other parts of central nervous system,Kansas City,KS,39.0668,-94.6282,4.5,3.1
+66610,146,121,5,Physician Assistant,*Unspecified,"Injury of muscle, fascia and tendon at shoulder and upper arm level",Topeka,KS,38.9822,-95.7461,29.2,24.2
+66112,144,86,11,Neurosurgery,*Unspecified,Intracranial injury,Kansas City,KS,39.116,-94.764,13.1,7.8
+66603,140,52,4,Pediatrics,*Unspecified,Neonatal jaundice from other and unspecified causes,Topeka,KS,39.0553,-95.6802,35.0,13.0
+66839,139,98,9,Family Medicine,*Unspecified,"Thoracic, thoracolumbar, and lumbosacral intervertebral disc disorders",Burlington,KS,38.2363,-95.7336,15.4,10.9
+85338,137,10,1,Dentistry,*Unspecified,Malignant neoplasm of breast,Goodyear,AZ,33.4368,-112.3834,137.0,10.0
+67410,125,46,13,Emergency Medicine,*Unspecified,Essential,Abilene,KS,38.9371,-97.2063,9.6,3.5
+60120,122,122,1,Social Work,*Unspecified,Other abnormal findings of blood chemistry,Elgin,IL,42.0384,-88.2606,122.0,122.0
+67226,115,70,41,Obstetrics/ Gynecology,*Unspecified,Dorsalgia,Wichita,KS,37.7379,-97.2479,2.8,1.7
+64132,113,65,22,Family Medicine,*Unspecified,Multiple sclerosis,Kansas City,MO,38.9911,-94.5522,5.1,3.0
+67601,111,70,13,Psychiatry,*Unspecified,Long term,Hays,KS,38.8782,-99.3348,8.5,5.4
+79401,111,105,2,Emergency Medicine,*Unspecified,Pain in throat and chest,Lubbock,TX,33.5865,-101.8606,55.5,52.5
+66067,105,78,18,Psychiatry,*Unspecified,Dorsalgia,Ottawa,KS,38.6142,-95.2745,5.8,4.3
+67214,96,53,34,Nurse Practitioner,*Unspecified,Encounter for screening for malignant neoplasms,Wichita,KS,37.7051,-97.3133,2.8,1.6
+66046,96,71,12,Family Medicine,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Lawrence,KS,38.9369,-95.242,8.0,5.9
+67212,83,42,8,Family Medicine,*Unspecified,Other disorders of urinary system,Wichita,KS,37.7007,-97.4383,10.4,5.2
+66048,76,42,15,Family Medicine,*Unspecified,Other disorders of urinary system,Leavenworth,KS,39.3015,-94.9339,5.1,2.8
+25401,66,40,1,General Medicine,*Unspecified,"Encounter for other special examination without complaint, suspected or reported diagnosis",Martinsburg,WV,39.4567,-77.9727,66.0,40.0
+87102,62,29,2,Internal Medicine,*Unspecified,Urticaria,Albuquerque,NM,35.0818,-106.6482,31.0,14.5
+67432,61,38,11,Family Medicine,*Unspecified,Asthma,Clay Center,KS,39.3844,-97.1278,5.5,3.5
+66616,59,21,2,,*Unspecified,Long term,Topeka,KS,39.0645,-95.6413,29.5,10.5
+64116,56,41,25,Podiatry,*Unspecified,"Other joint disorder, not elsewhere classified",Kansas City,MO,39.1479,-94.568,2.2,1.6
+66213,55,46,21,Hematology/ Oncology,*Unspecified,Other disorders of optic,Shawnee Mission,KS,38.8982,-94.7049,2.6,2.2
+80112,45,25,2,,*Unspecified,Rheumatoid arthritis with rheumatoid factor,Englewood,CO,39.5805,-104.9011,22.5,12.5
+67206,45,38,16,Family Medicine,*Unspecified,Visual disturbances,Wichita,KS,37.7038,-97.2253,2.8,2.4
+66508,45,12,6,Nurse Practitioner,*Unspecified,"Complications of internal orthopedic prosthetic devices, implants and grafts",Marysville,KS,39.8428,-96.6422,7.5,2.0
+92868,44,9,1,Ophthalmology,*Unspecified,"Findings of drugs and other substances, not normally found in blood",Orange,CA,33.7875,-117.8776,44.0,9.0
+66439,43,36,5,Family Medicine,*Unspecified,Essential,Horton,KS,39.6789,-95.5299,8.6,7.2
+21061,41,6,1,Nephrology,*Unspecified,Malignant neoplasm of rectum,Glen Burnie,MD,39.1618,-76.6297,41.0,6.0
+64506,40,21,17,Family Medicine,*Unspecified,Disorders of mineral metabolism,Saint Joseph,MO,39.7893,-94.8043,2.4,1.2
+66212,40,24,11,Pulmonology  (PCCM),*Unspecified,Multiple sclerosis,Shawnee Mission,KS,38.9568,-94.6832,3.6,2.2
+67218,39,27,10,Family Medicine,*Unspecified,Abnormalities of breathing,Wichita,KS,37.669,-97.2802,3.9,2.7
+13205,39,10,1,,*Unspecified,Encounter for procreative management,Syracuse,NY,43.0123,-76.1452,39.0,10.0
+64683,38,34,1,,*Unspecified,Abnormal serum enzyme levels,Trenton,MO,40.0823,-93.6086,38.0,34.0
+64086,34,26,16,Cardiology,*Unspecified,"Other joint disorder, not elsewhere classified",Lees Summit,MO,38.944,-94.2881,2.1,1.6
+67114,34,30,3,,*Unspecified,Conduct disorders,Newton,KS,38.0451,-97.3435,11.3,10.0
+94105,31,4,1,Family Medicine,*Unspecified,Long term,San Francisco,CA,37.7864,-122.3892,31.0,4.0
+64089,30,20,1,,*Unspecified,"Other and unspecified soft tissue disorders, not elsewhere classified",Smithville,MO,39.3917,-94.5592,30.0,20.0
+68106,30,13,4,,*Unspecified,Other hypothyroidism,Omaha,NE,41.2403,-95.998,7.5,3.2
+66206,30,11,6,Infectious Diseases,*Unspecified,"Complications of internal orthopedic prosthetic devices, implants and grafts",Shawnee Mission,KS,38.958,-94.6193,5.0,1.8
+15213,29,1,1,,*Unspecified,,Pittsburgh,PA,40.444,-79.9552,29.0,1.0
+64701,28,18,1,,*Unspecified,Pain associated with micturition,Harrisonville,MO,38.6419,-94.3285,28.0,18.0
+66217,28,20,12,Family Medicine,*Unspecified,Unspecified severe protein-calorie malnutrition,Shawnee Mission,KS,39.0146,-94.7709,2.3,1.7
+64057,27,19,8,Interventional Radiology,*Unspecified,Polyosteoarthritis,Independence,MO,39.0731,-94.3533,3.4,2.4
+67208,27,19,12,Obstetrics/ Gynecology,*Unspecified,Dorsalgia,Wichita,KS,37.7024,-97.2811,2.2,1.6
+66214,26,18,7,,*Unspecified,Multiple sclerosis,Shawnee Mission,KS,38.9649,-94.7209,3.7,2.6
+66102,24,10,7,Family Medicine,*Unspecified,Other inflammatory spondylopathies,Kansas City,KS,39.1132,-94.6693,3.4,1.4
+64014,24,21,3,Family Medicine,*Unspecified,"Other and unspecified soft tissue disorders, not elsewhere classified",Blue Springs,MO,39.0152,-94.2604,8.0,7.0
+68355,23,17,4,Family Medicine,*Unspecified,Aphagia and dysphagia,Falls City,NE,40.0742,-95.5931,5.8,4.2
+67219,22,8,1,Family Medicine,*Unspecified,Malaise and fatigue,Wichita,KS,37.7719,-97.3175,22.0,8.0
+73112,22,14,3,Neurology,*Unspecified,Cervical disc disorders,Oklahoma City,OK,35.5184,-97.5746,7.3,4.7
+66208,21,15,8,Pediatrics,*Unspecified,Cystic fibrosis,Shawnee Mission,KS,38.9938,-94.634,2.6,1.9
+66846,21,20,6,,*Unspecified,Dorsalgia,Council Grove,KS,38.6959,-96.5469,3.5,3.3
+64154,21,15,11,Internal Medicine,*Unspecified,Heart failure,Kansas City,MO,39.2547,-94.6354,1.9,1.4
+67449,20,17,4,,*Unspecified,Encounter for screening for malignant neoplasms,Herington,KS,38.6767,-96.8941,5.0,4.2
+66018,20,12,5,Family Medicine,*Unspecified,Other symptoms and signs involving cognitive functions and awareness,De Soto,KS,38.9462,-94.9714,4.0,2.4
+66425,20,11,2,,*Unspecified,Lack of expected normal physiological development in childhood and adults,Fairview,KS,39.8445,-95.711,10.0,5.5
+66621,20,20,1,,*Unspecified,Encounter for screening for infectious and parasitic diseases,Topeka,KS,39.0333,-95.7015,20.0,20.0
+19403,19,18,1,,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Norristown,PA,40.1496,-75.3796,19.0,18.0
+94143,19,18,2,Family Medicine,*Unspecified,Dorsalgia,San Francisco,CA,37.7631,-122.4586,9.5,9.0
+66531,19,13,2,Family Medicine,*Unspecified,Encounter for screening for malignant neoplasms,Riley,KS,39.3005,-96.8222,9.5,6.5
+63110,19,14,12,Internal Medicine,*Unspecified,Encounter for other postprocedural aftercare,Saint Louis,MO,38.6185,-90.2564,1.6,1.2
+66109,18,8,6,,*Unspecified,Other disorders of breast,Kansas City,KS,39.1434,-94.7856,3.0,1.3
+54913,18,17,1,Family Medicine,*Unspecified,Dorsalgia,Appleton,WI,44.3456,-88.4343,18.0,17.0
+68510,18,6,4,Obstetrics/ Gynecology,*Unspecified,Long term,Lincoln,NE,40.8063,-96.6545,4.5,1.5
+65803,18,9,1,,*Unspecified,Follicular lymphoma,Springfield,MO,37.2593,-93.2912,18.0,9.0
+64114,18,17,15,Psychiatry,*Unspecified,Dorsalgia,Kansas City,MO,38.9621,-94.5959,1.2,1.1
+66203,18,11,8,Vascular Surgery,*Unspecified,"Congenital malformations of musculoskeletal system, not elsewhere classified",Shawnee Mission,KS,39.0215,-94.7055,2.2,1.4
+66207,18,8,4,Family Medicine,*Unspecified,Benign neoplasm of other and unspecified endocrine glands,Shawnee Mission,KS,38.9575,-94.6452,4.5,2.0
+64064,18,10,4,,*Unspecified,Dorsalgia,Lees Summit,MO,38.9953,-94.3652,4.5,2.5
+80026,18,14,1,,*Unspecified,Fever of other and unknown origin,Lafayette,CO,39.998,-105.0963,18.0,14.0
+73102,17,5,1,Internal Medicine,*Unspecified,Other rheumatoid arthritis,Oklahoma City,OK,35.4726,-97.5199,17.0,5.0
+64128,17,13,6,Hematology/ Oncology,*Unspecified,Dorsalgia,Kansas City,MO,39.0659,-94.5386,2.8,2.2
+66106,17,13,8,Orthopedics,*Unspecified,Parkinson's disease,Kansas City,KS,39.0694,-94.7178,2.1,1.6
+65212,16,15,5,,*Unspecified,Osteoporosis without current pathological fracture,Columbia,MO,38.9376,-92.3304,3.2,3.0
+67544,16,5,3,Family Medicine,*Unspecified,Dorsalgia,Hoisington,KS,38.4789,-98.7565,5.3,1.7
+68506,15,7,8,Neurology,*Unspecified,Abnormalities of gait and mobility,Lincoln,NE,40.7848,-96.6431,1.9,0.9
+66071,15,14,3,Family Medicine,*Unspecified,"Encounter for general examination without complaint, suspected or reported diagnosis",Paola,KS,38.572,-94.8937,5.0,4.7
+66872,15,10,1,,*Unspecified,Iron deficiency anemia,White City,KS,38.789,-96.7637,15.0,10.0
+83110,14,14,1,Emergency Medicine,*Unspecified,"Noninflammatory disorders of ovary, fallopian tube and broad ligament",Afton,WY,42.7128,-110.942,14.0,14.0
+67042,14,8,6,Orthopedics,*Unspecified,"Complications of procedures, not elsewhere classified",El Dorado,KS,37.8226,-96.8543,2.3,1.3
+10022,13,2,3,,*Unspecified,Female infertility,New York City,NY,40.7571,-73.9657,4.3,0.7
+64131,13,10,8,,*Unspecified,"Pain, not elsewhere classified",Kansas City,MO,38.9713,-94.5774,1.6,1.2
+66227,13,12,8,Family Medicine,*Unspecified,"Other joint disorder, not elsewhere classified",Shawnee Mission,KS,38.9747,-94.8681,1.6,1.5
+77030,12,8,6,Pediatrics,*Unspecified,Malignant neoplasm of thyroid gland,Houston,TX,29.7041,-95.401,2.0,1.3
+66043,12,9,8,Family Medicine,*Unspecified,Abdominal and pelvic pain,Lansing,KS,39.2502,-94.8994,1.5,1.1
+67502,11,10,10,,*Unspecified,Abnormal findings on diagnostic imaging of lung,Hutchinson,KS,38.1156,-97.8937,1.1,1.0
+32804,11,2,1,Internal Medicine,*Unspecified,Transplanted organ and tissue status,Orlando,FL,28.5754,-81.3955,11.0,2.0
+66226,11,7,6,Internal Medicine,*Unspecified,Abnormal findings on diagnostic imaging of lung,Shawnee Mission,KS,39.0178,-94.8627,1.8,1.2
+64507,10,8,6,Hematology/ Oncology,*Unspecified,Enlarged lymph nodes,Saint Joseph,MO,39.7551,-94.8173,1.7,1.3
+21204,9,9,1,Neurosurgery,*Unspecified,"Other and unspecified soft tissue disorders, not elsewhere classified",Towson,MD,39.4072,-76.6038,9.0,9.0
+63011,9,7,1,,*Unspecified,Other symptoms and signs involving cognitive functions and awareness,Ballwin,MO,38.6091,-90.5598,9.0,7.0
+64068,9,7,6,,*Unspecified,Dizziness and giddiness,Liberty,MO,39.2989,-94.4363,1.5,1.2
+72758,9,1,1,,*Unspecified,Encounter for procreative management,Rogers,AR,36.3169,-94.1545,9.0,1.0
+75001,9,2,1,,*Unspecified,Dorsalgia,Addison,TX,32.96,-96.8385,9.0,2.0
+41101,9,5,1,,*Unspecified,Other symptoms and signs involving the digestive system and abdomen,Ashland,KY,38.4722,-82.6461,9.0,5.0
+64083,9,7,5,Internal Medicine,*Unspecified,Hypertensive heart and chronic kidney disease,Raymore,MO,38.8019,-94.4529,1.8,1.4
+67579,9,8,2,,*Unspecified,Conduct disorders,Sterling,KS,38.2126,-98.2055,4.5,4.0
+64050,8,3,1,,*Unspecified,Other sepsis,Independence,MO,39.0983,-94.4111,8.0,3.0
+64112,8,2,2,,*Unspecified,Gastrojejunal ulcer,Kansas City,MO,39.0382,-94.5929,4.0,1.0
+46204,8,2,1,Family Medicine,*Unspecified,Abnormal serum enzyme levels,Indianapolis,IN,39.772,-86.1535,8.0,2.0
+63379,8,8,1,General Surgery,*Unspecified,Acute bronchitis,Troy,MO,39.0012,-90.9624,8.0,8.0
+68114,8,8,7,,*Unspecified,Cardiac murmurs and other cardiac sounds,Omaha,NE,41.2656,-96.0493,1.1,1.1
+66104,8,5,1,,*Unspecified,Encounter for screening for infectious and parasitic diseases,Kansas City,KS,39.1375,-94.6792,8.0,5.0
+66968,8,7,2,Family Medicine,*Unspecified,"Occlusion and stenosis of precerebral arteries, not resulting in cerebral infarction",Washington,KS,39.8223,-97.0484,4.0,3.5
+87109,8,7,2,Anesthesiology,*Unspecified,"Other joint disorder, not elsewhere classified",Albuquerque,NM,35.1506,-106.569,4.0,3.5
+73142,8,3,1,,*Unspecified,Benign neoplasm of other and unspecified endocrine glands,Oklahoma City,OK,35.599,-97.6251,8.0,3.0
+66501,8,8,1,,*Unspecified,Acute pharyngitis,Mc Farland,KS,39.0535,-96.2379,8.0,8.0
+68138,7,5,1,,*Unspecified,Encounter for procreative management,Omaha,NE,41.1549,-96.1376,7.0,5.0
+66221,7,5,4,Orthopedics,*Unspecified,Dorsalgia,Shawnee Mission,KS,38.8636,-94.7103,1.8,1.2
+29506,7,6,1,Vascular Surgery,*Unspecified,Abdominal and pelvic pain,Florence,SC,34.2153,-79.6468,7.0,6.0
+95382,7,5,1,Family Medicine,*Unspecified,Psoriasis,Turlock,CA,37.5239,-120.8517,7.0,5.0
+64804,7,4,3,Internal Medicine,*Unspecified,Cough,Joplin,MO,37.0465,-94.5103,2.3,1.3
+64118,7,5,5,Infectious Diseases,*Unspecified,Bronchiectasis,Kansas City,MO,39.2133,-94.5743,1.4,1.0
+84107,7,3,1,,*Unspecified,"Cutaneous abscess, furuncle and carbuncle",Salt Lake City,UT,40.6568,-111.8904,7.0,3.0
+66035,7,5,1,,*Unspecified,Disorders of lipoprotein metabolism and other lipidemias,Highland,KS,39.8608,-95.2583,7.0,5.0
+53715,7,3,3,Emergency Medicine,*Unspecified,Multiple sclerosis,Madison,WI,43.0653,-89.4,2.3,1.0
+67456,6,4,2,,*Unspecified,Dorsalgia,Lindsborg,KS,38.5761,-97.6739,3.0,2.0
+64119,6,5,2,,*Unspecified,Abnormal findings on diagnostic imaging of other body structures,Kansas City,MO,39.1978,-94.5199,3.0,2.5
+67002,6,4,1,,*Unspecified,"Encounter for other special examination without complaint, suspected or reported diagnosis",Andover,KS,37.6985,-97.1179,6.0,4.0
+68022,6,2,1,,*Unspecified,,Elkhorn,NE,41.2756,-96.2431,6.0,2.0
+64055,6,6,2,Otolaryngology/ENT,*Unspecified,Asthma,Independence,MO,39.0545,-94.4039,3.0,3.0
+66027,6,5,4,,*Unspecified,Dorsalgia,Fort Leavenworth,KS,39.3485,-94.9265,1.5,1.2
+64151,6,5,4,Orthopedics,*Unspecified,Abdominal and pelvic pain,Kansas City,MO,39.2127,-94.6383,1.5,1.2
+66852,6,6,1,Dentistry,*Unspecified,Other diseases of lip and oral mucosa,Gridley,KS,38.1012,-95.8874,6.0,6.0
+46307,6,2,1,Cardiovascular/Thoracic Surgery (CTS),*Unspecified,"Encounter for other special examination without complaint, suspected or reported diagnosis",Crown Point,IN,41.4236,-87.3556,6.0,2.0
+66749,6,5,4,Family Medicine,*Unspecified,"Other joint disorder, not elsewhere classified",Iola,KS,37.8858,-95.3911,1.5,1.2
+66224,6,4,1,,*Unspecified,"Other joint disorder, not elsewhere classified",Shawnee Mission,KS,38.8591,-94.6314,6.0,4.0
+19104,5,5,5,Cardiology,*Unspecified,Acute kidney failure,Philadelphia,PA,39.9597,-75.2024,1.0,1.0
+66086,5,3,2,Family Medicine,*Unspecified,Newborn affected by maternal complications of pregnancy,Tonganoxie,KS,39.1026,-95.1051,2.5,1.5
+68516,5,5,3,Endocrinology,*Unspecified,Disorders of mineral metabolism,Lincoln,NE,40.7568,-96.6523,1.7,1.7
+66006,5,4,2,Family Medicine,*Unspecified,Aphagia and dysphagia,Baldwin City,KS,38.7953,-95.2276,2.5,2.0
+64133,5,4,3,Family Medicine,*Unspecified,Abdominal and pelvic pain,Kansas City,MO,39.0323,-94.47,1.7,1.3
+67801,5,5,4,,*Unspecified,Osteoporosis without current pathological fracture,Dodge City,KS,37.7569,-100.0241,1.2,1.2
+84088,5,1,1,,*Unspecified,"Congenital malformations of musculoskeletal system, not elsewhere classified",West Jordan,UT,40.5959,-111.9644,5.0,1.0
+64117,5,3,3,Otolaryngology/ENT,*Unspecified,"Pain, unspecified",Kansas City,MO,39.1651,-94.5256,1.7,1.0
+67062,5,1,1,,*Unspecified,Encounter for screening for malignant neoplasms,Hesston,KS,38.136,-97.4495,5.0,1.0
+56728,5,1,1,Family Medicine,*Unspecified,"Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium",Hallock,MN,48.7749,-96.9445,5.0,1.0
+61114,5,5,1,Genetics,*Unspecified,Acute bronchiolitis,Rockford,IL,42.3185,-88.9972,5.0,5.0
+81632,5,4,1,,*Unspecified,Deficiency of other b group vitamins,Edwards,CO,39.6382,-106.6206,5.0,4.0
+92037,5,2,2,,*Unspecified,Encounter for procreative management,La Jolla,CA,32.8455,-117.2521,2.5,1.0
+91105,5,3,2,,*Unspecified,Encounter for procreative management,Pasadena,CA,34.1355,-118.1636,2.5,1.5
+90210,5,2,1,,*Unspecified,Cardiomyopathy,Beverly Hills,CA,34.0901,-118.4065,5.0,2.0
+66935,5,4,2,,*Unspecified,Paroxysmal tachycardia,Belleville,KS,39.8241,-97.629,2.5,2.0
+66216,5,4,3,,*Unspecified,Other nonscarring hair loss,Shawnee Mission,KS,39.0147,-94.7414,1.7,1.3
+32217,5,5,1,Pediatrics,*Unspecified,Enlarged lymph nodes,Jacksonville,FL,30.2407,-81.617,5.0,5.0
+67037,4,3,2,Orthopedics,*Unspecified,Osteonecrosis,Derby,KS,37.553,-97.2549,2.0,1.5
+61822,4,4,1,Rheumatology,*Unspecified,Chronic ischemic heart disease,Champaign,IL,40.1317,-88.2854,4.0,4.0
+12208,4,3,3,Ophthalmology,*Unspecified,Disorders of globe,Albany,NY,42.656,-73.7964,1.3,1.0
+44195,4,3,3,Gastroenterology,*Unspecified,Abnormal findings on diagnostic imaging of central nervous system,Cleveland,OH,41.6857,-81.6728,1.3,1.0
+53711,4,3,1,,*Unspecified,,Madison,WI,43.0356,-89.4526,4.0,3.0
+67054,4,1,1,,*Unspecified,"Localized swelling, mass and lump of skin and subcutaneous tissue",Greensburg,KS,37.6084,-99.3011,4.0,1.0
+20191,4,4,1,Family Medicine,*Unspecified,,Reston,VA,38.9318,-77.3527,4.0,4.0
+28054,4,4,1,Family Medicine,*Unspecified,,Gastonia,NC,35.2495,-81.133,4.0,4.0
+67357,4,4,1,,*Unspecified,Symptoms and signs concerning food and fluid intake,Parsons,KS,37.3389,-95.2693,4.0,4.0
+66033,4,4,1,,*Unspecified,Effects of other deprivation,Greeley,KS,38.3524,-95.1188,4.0,4.0
+68105,4,4,4,Family Medicine,*Unspecified,Abnormal serum enzyme levels,Omaha,NE,41.2435,-95.9629,1.0,1.0
+66411,4,3,3,,*Unspecified,Abnormal findings on diagnostic imaging of lung,Blue Rapids,KS,39.675,-96.636,1.3,1.0
+64098,4,2,1,,*Unspecified,Dorsalgia,Weston,MO,39.4453,-94.9145,4.0,2.0
+68131,4,4,4,Neurology,*Unspecified,"Convulsions, not elsewhere classified",Omaha,NE,41.2647,-95.9639,1.0,1.0
+48109,4,4,2,Infectious Diseases,*Unspecified,Abnormal serum enzyme levels,Ann Arbor,MI,42.2763,-83.7112,2.0,2.0
+68066,4,1,1,,*Unspecified,Multiple sclerosis,Wahoo,NE,41.2117,-96.6219,4.0,1.0
+92618,4,1,2,,*Unspecified,Malignant neoplasm of breast,Irvine,CA,33.7074,-117.7054,2.0,0.5
+80027,4,3,2,,*Unspecified,Encounter for attention to artificial openings,Louisville,CO,39.9789,-105.1456,2.0,1.5

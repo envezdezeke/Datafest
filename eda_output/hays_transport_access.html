@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hays Transportation And Provider Access</title>
+  <style>
+    :root {
+      --bg:#f6f1e8; --panel:rgba(255,251,245,.94); --ink:#1f2d2f; --muted:#607074; --accent:#0d6c63; --line:rgba(31,45,47,.14);
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family:"Avenir Next","Segoe UI",sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(196,110,65,.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(13,108,99,.12), transparent 26%),
+        linear-gradient(180deg,#f8f3eb 0%,#efe4d7 100%);
+    }
+    .wrap { width:min(1360px, calc(100vw - 28px)); margin:0 auto; padding:28px 0 42px; }
+    .card {
+      background:var(--panel);
+      border:1px solid color-mix(in srgb, white 55%, var(--line));
+      border-radius:28px;
+      padding:28px;
+      margin-bottom:18px;
+      box-shadow:0 18px 45px rgba(25,35,38,.10);
+      backdrop-filter:blur(10px);
+    }
+    h1,h2 { margin:0 0 12px; line-height:1.08; }
+    h1 { font-size:clamp(34px,5vw,58px); }
+    h2 { font-size:28px; }
+    p { color:var(--muted); margin:0 0 12px; line-height:1.55; }
+    .metrics { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-top:18px; }
+    .mini { border:1px solid var(--line); border-radius:18px; padding:16px; background:rgba(255,255,255,.5); }
+    .mini span { display:block; font-size:12px; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); margin-bottom:6px; }
+    .mini strong { display:block; font-size:28px; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    ul { margin:0; padding-left:20px; }
+    li { margin-bottom:8px; }
+    .data-table { width:100%; border-collapse:collapse; font-size:14px; }
+    .data-table th,.data-table td { border-bottom:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+    code { color:var(--accent); }
+    @media (max-width: 1100px) {
+      .grid, .metrics { grid-template-columns:1fr; }
+      .card { padding:20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="card">
+      <h1>Hays Transportation And Provider Access</h1>
+      <p>
+        This analysis uses the provided raw files to estimate how often Hays-area patients use encounters, whether they
+        reported transportation issues, and which other Kansas areas show a similar risk pattern. Because <code>patients.csv</code>
+        does not include a city field, Hays is inferred using TIGER census block group centroids within 10 miles
+        of Hays, Kansas ZIP 67601.
+      </p>
+      <div class="metrics">
+        <div class="mini"><span>Hays-Area Patients</span><strong>1,462</strong></div>
+        <div class="mini"><span>Hays-Area Encounters</span><strong>373</strong></div>
+        <div class="mini"><span>Mean Encounters</span><strong>4.34</strong></div>
+        <div class="mini"><span>Transport Issue Rate</span><strong>0.0%</strong></div>
+        <div class="mini"><span>Median Distance</span><strong>194.5 mi</strong></div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha256-Ei4740bWZhaUTQuD6q9yQlgVCMPBz6CZWhevDYPv93A=" crossorigin="anonymous"></script>                <div id="e7fabfb2-5d08-4369-9634-e305acef7656" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e7fabfb2-5d08-4369-9634-e305acef7656")) {                    Plotly.newPlot(                        "e7fabfb2-5d08-4369-9634-e305acef7656",                        [{"colorbar":{"title":{"text":"Hays-area home density"},"x":0.96},"colorscale":[[0.0,"rgba(0,48,73,0.08)"],[0.25,"rgba(0,119,182,0.28)"],[0.5,"rgba(0,180,216,0.5)"],[0.75,"rgba(255,183,3,0.75)"],[1.0,"rgba(251,86,7,0.95)"]],"lat":{"dtype":"f8","bdata":"U2gPanV1Q0DSTJyBNm9DQKHGc2zzcUNAZQxiVt5wQ0BjLgSU4XBDQMvVj03yb0NAGan3VE5rQ0C4yagyjG9DQDH2FO+2c0NAaqLPRxlyQ0A7lWe5x3JDQCcubHKdcUNAl2mgnuNwQ0Dg4SzbPXRDQCGMRA1LckNAZYIr6t1wQ0DuaT0yDHBDQGjv52+db0NAatcp+1NwQ0C\u002fKaxUUGtDQNPsy+N6b0NAmVWOf1VvQ0Cd7XZie3VDQA=="},"lon":{"dtype":"f8","bdata":"oN\u002f3b97KWMCro5ndydNYwJk+hW3V01jAiDa2jXXTWMD5VtqYDdRYwBJlFHB001jA43s19lvSWMAtLBPZ4tJYwFDebBiq0VjAdUQZBZzUWMBSWsnYGtVYwP6yIDk+1VjAuu2MALjUWMAHtd\u002faCddYwDzkHCvn1VjACKgVS7bVWMBr3sxDAdVYwMVVZd+V1FjAhADPrFvVWMDyDBr6p9ZYwGEE6FI31ljA8OvRZXvVWMDg10gShN1YwA=="},"name":"Hays-area patients","radius":18,"showscale":true,"z":{"dtype":"f8","bdata":"Gxjj6JGSEEDz\u002frpZggcQQPhL5QiBTBJAGxjj6JGSEECmI0raNMIQQEmprqolnA9AEujAwqtSEUBZmq2hFSwQQHW7UDw4+A5AdSmUk5KyEECLMmXcm2AQQDwyTIcOYBFA9oquF130EUAhQWeJdf4QQHW7UDw4+A5ADBPCd3DpD0Dr3CeEL4IQQD9X9FxOGxFAeSnH+WVPEEBbR78K+rASQJCEA7jfXQpAeSnH+WVPEEB5Kcf5ZU8QQA=="},"type":"densitymap"},{"customdata":[[269,67,194.59,194.52,"Endocrinology"],[35,13,194.34,194.73,"Emergency Medicine"],[20,4,148.1,147.88,"Family Medicine"],[14,4,192.94,193.11,"Nurse Practitioner"],[10,3,198.34,198.63,"Family Medicine"],[6,3,135.85,133.46,"Emergency Medicine"],[4,1,249.74,249.74,"Plastic\u002f Reconstructive Surgery"],[3,1,228.54,228.54,"Urology"],[3,1,145.45,145.45,"Family Medicine"],[3,3,249.49,249.69,"Psychiatry"],[3,3,195.28,195.76,"Family Medicine"],[1,1,217.47,217.47,"Rheumatology"],[1,1,216.59,216.59,"Family Medicine"],[1,1,181.74,181.74,"Nurse Practitioner"]],"hovertemplate":"\u003cb\u003e%{text}\u003c\u002fb\u003e\u003cbr\u003eEncounters: %{customdata[0]:,}\u003cbr\u003ePatients: %{customdata[1]:,}\u003cbr\u003eMean distance: %{customdata[2]} mi\u003cbr\u003eMedian distance: %{customdata[3]} mi\u003cbr\u003eTop specialty: %{customdata[4]}\u003cextra\u003e\u003c\u002fextra\u003e","lat":{"dtype":"f8","bdata":"rK3YX3aHQ0B3vp8aL4VDQH\u002f7OnDOmENA4C2QoPiBQ0C1FfvL7oFDQEATYcPTg0NAETY8vVJuQ0BdbcX+soNDQKyt2F92n0NAArwFEhR\u002fQ0C30QDeApFDQOoENBE2fENAswxxrIubQ0AmUwWjkpJDQA=="},"lon":{"dtype":"f8","bdata":"xSCwcmjtV8BnRGlv8O1XwMx\u002fSL99JVjAeVioNc3vV8A+eVioNelXwC9uowG8NVjA\u002fKnx0k2qV8CFfNCzWc1XwLivA+eMKFjAyAc9m1WrV8DF\u002frJ78uxXwMsQx7q40VfA8tJNYhDUV8Cad5yiI\u002f1XwA=="},"marker":{"color":{"dtype":"i2","bdata":"DQEjABQADgAKAAYABAADAAMAAwADAAEAAQABAA=="},"colorbar":{"title":{"text":"Destination volume"},"x":1.06},"colorscale":[[0.0,"#6a040f"],[0.25,"#9d0208"],[0.5,"#dc2f02"],[0.75,"#f48c06"],[1.0,"#ffba08"]],"opacity":0.9,"showscale":true,"size":{"dtype":"f8","bdata":"CIhT6Pr9O0ABVFp85+oxQF2aizn6cS5AJ5qgx5sUK0AfBV+lnPonQAAAAAAAACRAAAAAAAAAJEAAAAAAAAAkQAAAAAAAACRAAAAAAAAAJEAAAAAAAAAkQAAAAAAAACRAAAAAAAAAJEAAAAAAAAAkQA=="}},"mode":"markers","name":"Destinations used by Hays-area patients","text":["Topeka (66606)","Topeka (66604)","Manhattan (66502)","Topeka (66614)","Topeka (66605)","Junction City (66441)","Shawnee Mission (66223)","Lawrence (66044)","Manhattan (66503)","Shawnee Mission (66204)","Topeka (66618)","Lawrence (66049)","Oskaloosa (66066)","Rossville (66533)"],"type":"scattermap"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"map":{"center":{"lat":38.88,"lon":-99.33},"style":"carto-positron","zoom":6.2},"margin":{"l":10,"r":10,"t":50,"b":10},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"x":0.01},"title":{"text":"Hays-Area Patients And Their Provider Destinations"}},                        {"responsive": true}                    )                };            </script>        </div></div>
+      <div class="card"><div>                            <div id="ce4b2114-df12-4be6-85cb-7c6cf18b588f" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("ce4b2114-df12-4be6-85cb-7c6cf18b588f")) {                    Plotly.newPlot(                        "ce4b2114-df12-4be6-85cb-7c6cf18b588f",                        [{"customdata":{"dtype":"f8","bdata":"AAAAAAC8lkBCYOXQItvBP2ZmZmZmZllAAAAAAADAWUCWQ4ts5\u002fvvPwAAAAAA4JVAMQisHFpkwz+F61G4HgVHQAAAAAAAAEdA5q4l5IOe7z8AAAAAACW8QEp7gy9MpsI\u002fzczMzMxMOkAAAAAAAAA5QGwJ+aBns+4\u002fAAAAAAAMk0Dc14FzRpS2P6RwPQrXw0hAAAAAAAAASEDMXUvIBz3vPwAAAAAAgIlAexSuR+F6tD9SuB6F65FRQAAAAAAAgFJAE\u002fJBz2bV7z8AAAAAAPCQQOLplbIMcbw\u002fmpmZmZm5RUAAAAAAAIBFQEMc6+I2Guw\u002fAAAAAAAkk0ACK4cW2c63P+F6FK5HQUZAAAAAAACARkAkKH6MuWvvPwAAAAAAsqZA+zpwzojSrj8fhetRuJ5KQAAAAAAAAE1A7uvAOSNK7z8AAAAAAAyWQBsN4C2QoLg\u002fj8L1KFxvQkAAAAAAAIBDQGB2Tx4Wau8\u002fAAAAAACOqkDzjlN0JJevP7gehetR+EhAAAAAAAAATEAjSnuDL0zsPwAAAAAAAqVAE2HD0ytluT9mZmZmZiY7QAAAAAAAADdAvp8aL90k7j8AAAAAAMiSQN9PjZduErM\u002fhetRuB4lQEAAAAAAAAA6QDVeukkMAus\u002f","shape":"12, 5"},"hovertemplate":"\u003cb\u003e%{text}\u003c\u002fb\u003e\u003cbr\u003ePatients: %{customdata[0]:,}\u003cbr\u003eTransport issue rate (screened): %{customdata[1]:.1%}\u003cbr\u003eMean distance: %{marker.color:.2f} mi\u003cbr\u003eMedian distance: %{customdata[2]:.2f} mi\u003cbr\u003eMode distance: %{customdata[3]} mi\u003cbr\u003eShare \u003e=20mi: %{customdata[4]:.1%}\u003cextra\u003e\u003c\u002fextra\u003e","lat":{"dtype":"f8","bdata":"OeyGA2dpQ0DysFBrmsdDQIGVQ4tsd0NAj8L1KFxnQ0DOiNLe4OtDQDvfT42XpkNAx7q4jQagQ0BmuXhg929DQAKaCBueTkNA9wZfmEzlQ0AgQfFjzGVDQAKaCBueVkNA"},"lon":{"dtype":"f8","bdata":"XdQ5\u002fhhpWMB\u002f2T15WMhXwK1p3nGKxlfAnzws1Jq6V8BwXwfOGSlYwABvgQTFu1fAb4EExY+5V8BCfdZ87bFXwCGwcmiR0VfALSEf9GzmV8B0JJf\u002fkM5XwKHWNO84OVjA"},"marker":{"color":{"dtype":"f8","bdata":"w\u002fUoXI8CVkBI4XoUridHQMP1KFyPgjxASOF6FK5HS0Bcj8L1KLxNQGZmZmZmRkRAXI\u002fC9SicRkB7FK5H4RpMQHsUrkfh+kFAzczMzMxsR0Bcj8L1KNw8QBSuR+F6NERA"},"colorbar":{"title":{"text":"Mean distance (mi)"}},"colorscale":[[0.0,"#3a0ca3"],[0.25,"#4361ee"],[0.5,"#4cc9f0"],[0.75,"#f8961e"],[1.0,"#d62828"]],"opacity":0.9,"showscale":true,"size":{"dtype":"f8","bdata":"pWrWYfyDLkBKP2gR6u4tQAAAAAAAAD5AG\u002fkrlmzuK0AAAAAAAAAoQArHnfPdVipAAAAAAAAALEAbhJEXKY81QMoOAbH1DC5Am\u002fsXQARSN0CepWqeAr40QJNXP8RjvCtA"}},"mode":"markers+text","name":"Candidate areas","text":["Salina","Atchison","Eudora","Gardner","Marysville","Leavenworth","Lansing","Olathe","Ottawa","Hiawatha","Baldwin City","Herington"],"textposition":"top center","type":"scattermap"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"map":{"center":{"lat":38.5,"lon":-98.4},"style":"carto-positron","zoom":6},"margin":{"l":10,"r":10,"t":50,"b":10},"title":{"text":"Other Kansas Areas With Potential Transportation Risk From Travel Distance"}},                        {"responsive": true}                    )                };            </script>        </div></div>
+    </section>
+
+    <section class="grid">
+      <div class="card"><div>                            <div id="808ffd55-0d98-4130-9f6d-04c8f3180529" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("808ffd55-0d98-4130-9f6d-04c8f3180529")) {                    Plotly.newPlot(                        "808ffd55-0d98-4130-9f6d-04c8f3180529",                        [{"bingroup":"x","hovertemplate":"encounter_count=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#0d6c63","pattern":{"shape":""}},"name":"","nbinsx":30,"orientation":"v","showlegend":false,"x":{"dtype":"i1","bdata":"SgECAQMBAgEFAQcBBQIBAwcCAwIBBAEBIQIEDQMGAg0CBAECCwccAgEFEQEBAQEBAQIDAQEBAwEBAQgBAwEBARABAQEBAwMBAgEBBAMDAQIBAgEBAQE="},"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Encounters per Hays-area patient"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Patient count"}},"legend":{"tracegroupgap":0},"title":{"text":"How Often Hays-Area Patients Have Encounters"},"barmode":"relative","margin":{"l":20,"r":20,"t":50,"b":20},"bargap":0.04},                        {"responsive": true}                    )                };            </script>        </div></div>
+      <div class="card">
+        <h2>Key Findings</h2>
+        <ul><li>Hays-area patients are approximated as Kansas patients whose home census block group centroid falls within 10 miles of Hays ZIP 67601.</li><li>These patients generated 373 encounters across 1,462 unique patients, with a mean of 4.34 and a median of 2.00 encounters per patient.</li><li>8 Hays-area patients had at least one transportation screening, and 0 of them reported a transportation issue at least once.</li><li>That is 0.0% of screened Hays-area patients, or 0.0% of all inferred Hays-area patients.</li><li>Hays-area travel distance has a mean of 192.17 miles, a median of 194.52 miles, and a rounded mode of 195 mile.</li><li>Potential comparison areas are ranked using a combination of patient volume, transportation-issue rate, and travel distance; the strongest signals outside Hays are Salina, Atchison, Eudora, Gardner, Marysville.</li></ul>
+        <p><strong>Mean distance:</strong> 192.17 miles</p>
+        <p><strong>Median distance:</strong> 194.52 miles</p>
+        <p><strong>Mode distance:</strong> 195 mile (rounded)</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Where Hays-Area Patients Go Most Often</h2>
+        <table border="1" class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>provider_city</th>
+      <th>zip5</th>
+      <th>encounter_count</th>
+      <th>unique_patients</th>
+      <th>mean_distance</th>
+      <th>median_distance</th>
+      <th>top_specialty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Topeka</td>
+      <td>66606</td>
+      <td>269</td>
+      <td>67</td>
+      <td>194.59</td>
+      <td>194.52</td>
+      <td>Endocrinology</td>
+    </tr>
+    <tr>
+      <td>Topeka</td>
+      <td>66604</td>
+      <td>35</td>
+      <td>13</td>
+      <td>194.34</td>
+      <td>194.73</td>
+      <td>Emergency Medicine</td>
+    </tr>
+    <tr>
+      <td>Manhattan</td>
+      <td>66502</td>
+      <td>20</td>
+      <td>4</td>
+      <td>148.10</td>
+      <td>147.88</td>
+      <td>Family Medicine</td>
+    </tr>
+    <tr>
+      <td>Topeka</td>
+      <td>66614</td>
+      <td>14</td>
+      <td>4</td>
+      <td>192.94</td>
+      <td>193.11</td>
+      <td>Nurse Practitioner</td>
+    </tr>
+    <tr>
+      <td>Topeka</td>
+      <td>66605</td>
+      <td>10</td>
+      <td>3</td>
+      <td>198.34</td>
+      <td>198.63</td>
+      <td>Family Medicine</td>
+    </tr>
+    <tr>
+      <td>Junction City</td>
+      <td>66441</td>
+      <td>6</td>
+      <td>3</td>
+      <td>135.85</td>
+      <td>133.46</td>
+      <td>Emergency Medicine</td>
+    </tr>
+    <tr>
+      <td>Shawnee Mission</td>
+      <td>66223</td>
+      <td>4</td>
+      <td>1</td>
+      <td>249.74</td>
+      <td>249.74</td>
+      <td>Plastic/ Reconstructive Surgery</td>
+    </tr>
+    <tr>
+      <td>Lawrence</td>
+      <td>66044</td>
+      <td>3</td>
+      <td>1</td>
+      <td>228.54</td>
+      <td>228.54</td>
+      <td>Urology</td>
+    </tr>
+    <tr>
+      <td>Manhattan</td>
+      <td>66503</td>
+      <td>3</td>
+      <td>1</td>
+      <td>145.45</td>
+      <td>145.45</td>
+      <td>Family Medicine</td>
+    </tr>
+    <tr>
+      <td>Shawnee Mission</td>
+      <td>66204</td>
+      <td>3</td>
+      <td>3</td>
+      <td>249.49</td>
+      <td>249.69</td>
+      <td>Psychiatry</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="card">
+        <h2>Other Areas To Watch</h2>
+        <p>
+          These areas combine a larger travel burden with a meaningful share of screened patients reporting transportation problems.
+          They are intended as candidate locations for deeper access review, not final causal claims.
+        </p>
+        <table border="1" class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Area</th>
+      <th>Patients</th>
+      <th>Transport Issue Rate %</th>
+      <th>Mean Distance</th>
+      <th>Median Distance</th>
+      <th>Mode Distance</th>
+      <th>Share &gt;=20mi %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Salina</td>
+      <td>1455</td>
+      <td>14.0</td>
+      <td>88.04</td>
+      <td>101.60</td>
+      <td>103</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>Atchison</td>
+      <td>1400</td>
+      <td>15.2</td>
+      <td>46.31</td>
+      <td>46.04</td>
+      <td>46</td>
+      <td>98.8</td>
+    </tr>
+    <tr>
+      <td>Eudora</td>
+      <td>7205</td>
+      <td>14.6</td>
+      <td>28.51</td>
+      <td>26.30</td>
+      <td>25</td>
+      <td>95.9</td>
+    </tr>
+    <tr>
+      <td>Gardner</td>
+      <td>1219</td>
+      <td>8.8</td>
+      <td>54.56</td>
+      <td>49.53</td>
+      <td>48</td>
+      <td>97.6</td>
+    </tr>
+    <tr>
+      <td>Marysville</td>
+      <td>816</td>
+      <td>8.0</td>
+      <td>59.47</td>
+      <td>70.28</td>
+      <td>74</td>
+      <td>99.5</td>
+    </tr>
+    <tr>
+      <td>Leavenworth</td>
+      <td>1084</td>
+      <td>11.1</td>
+      <td>40.55</td>
+      <td>43.45</td>
+      <td>43</td>
+      <td>87.8</td>
+    </tr>
+    <tr>
+      <td>Lansing</td>
+      <td>1225</td>
+      <td>9.3</td>
+      <td>45.22</td>
+      <td>44.51</td>
+      <td>45</td>
+      <td>98.2</td>
+    </tr>
+    <tr>
+      <td>Olathe</td>
+      <td>2905</td>
+      <td>6.0</td>
+      <td>56.21</td>
+      <td>53.24</td>
+      <td>58</td>
+      <td>97.8</td>
+    </tr>
+    <tr>
+      <td>Ottawa</td>
+      <td>1411</td>
+      <td>9.6</td>
+      <td>35.96</td>
+      <td>36.87</td>
+      <td>39</td>
+      <td>98.2</td>
+    </tr>
+    <tr>
+      <td>Hiawatha</td>
+      <td>3399</td>
+      <td>6.2</td>
+      <td>46.85</td>
+      <td>49.94</td>
+      <td>56</td>
+      <td>88.4</td>
+    </tr>
+    <tr>
+      <td>Baldwin City</td>
+      <td>2689</td>
+      <td>9.9</td>
+      <td>28.86</td>
+      <td>27.15</td>
+      <td>23</td>
+      <td>94.2</td>
+    </tr>
+    <tr>
+      <td>Herington</td>
+      <td>1202</td>
+      <td>7.4</td>
+      <td>40.41</td>
+      <td>32.29</td>
+      <td>26</td>
+      <td>84.4</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

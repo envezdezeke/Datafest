@@ -1,0 +1,6 @@
+column,dtype,n_null,n_unspecified,pct_missing_or_unspec,n_unique
+DiagnosisKey,float64,0,0,0.0,1382555
+GroupName,object,0,0,0.0,1991
+GroupCode,object,0,0,0.0,1963
+DiagnosisName,object,0,0,0.0,99264
+DiagnosisValue,object,0,0,0.0,99261

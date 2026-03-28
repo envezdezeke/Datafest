@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regression to the Mean Streets | Strategy Model</title>
+  <style>
+    :root { --bg:#f4efe7; --bg-2:#efe5d8; --panel:rgba(255,251,245,.84); --panel-strong:rgba(255,252,247,.94); --ink:#1d2a2f; --muted:#5a6a6d; --accent:#0d6c63; --line:rgba(29,42,47,.12); --shadow:0 20px 50px rgba(35,41,44,.12); }
+    [data-theme="dark"] { --bg:#10181c; --bg-2:#182229; --panel:rgba(20,29,34,.88); --panel-strong:rgba(24,35,41,.94); --ink:#edf2ef; --muted:#a7b7b8; --accent:#6fd3c7; --line:rgba(237,242,239,.1); --shadow:0 20px 50px rgba(0,0,0,.3); }
+    *{box-sizing:border-box} body{margin:0;font-family:"Avenir Next","Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at top left, rgba(200,107,60,.14), transparent 26%),radial-gradient(circle at top right, rgba(13,108,99,.16), transparent 28%),linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);line-height:1.55}
+    .shell,.topbar-inner{width:min(1180px,calc(100vw - 28px));margin:0 auto}.shell{padding-bottom:40px}.topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb, var(--bg) 76%, transparent);border-bottom:1px solid var(--line)}.topbar-inner{padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--accent)}.nav{display:flex;gap:10px;flex-wrap:wrap}.nav a,.theme-toggle{text-decoration:none;color:var(--muted);font-size:14px;padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:var(--panel)}.nav a.active{color:var(--ink)}.theme-toggle{cursor:pointer;font:inherit}
+    .card{background:var(--panel);border:1px solid color-mix(in srgb, white 55%, var(--line));border-radius:30px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}.hero,.grid{display:grid;gap:18px}.hero{padding:42px 0 22px}.hero-card,.section,.panel{padding:32px}.eyebrow{display:inline-block;margin-bottom:14px;color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}h1,h2,h3{margin:0;line-height:1.08}h1{font-size:clamp(36px,6vw,56px)}h2{font-size:28px;margin-bottom:10px}h3{font-size:20px;margin-bottom:8px}p{margin:0 0 14px;color:var(--muted)}.grid{grid-template-columns:.9fr 1.1fr}
+    label{display:block;font-size:13px;font-weight:700;margin:0 0 6px}.control{margin-bottom:18px}.row{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:14px}input[type="range"]{width:100%}select{width:100%;padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:var(--panel-strong);color:var(--ink)}
+    .result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:18px}.result{padding:18px;border:1px solid var(--line);border-radius:20px;background:var(--panel-strong)}.result span{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}.result strong{display:block;font-size:28px}
+    .summary{padding:18px;border-left:4px solid var(--accent);background:rgba(13,108,99,.07);border-radius:18px}
+    .note{font-size:14px}
+    @media (max-width: 960px){.grid,.result-grid{grid-template-columns:1fr}.hero-card,.section,.panel{padding:22px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><div class="brand">Regression to the Mean Streets</div><div class="nav"><a href="eda_report.html">Overview</a><a href="opportunities.html">Opportunities</a><a class="active" href="strategy_model.html">Strategy Model</a><a href="evidence.html">Evidence</a><a href="roadmap.html">Roadmap</a><button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button></div></div></div>
+  <div class="shell">
+    <section class="hero"><div class="card hero-card"><div class="eyebrow">Interactive Scenario Model</div><h1>Predict Outcomes Of Different Strategies</h1><p>This page models directional outcomes from different strategy mixes. It is an interactive scenario model for planning, not a trained predictive model. The formulas use the EDA priorities as inputs and convert them into estimated changes in follow-up completion, avoidable delays, and coordination lift.</p></div></section>
+    <section class="grid">
+      <div class="card section">
+        <div class="control"><label for="strategy">Primary strategy</label><select id="strategy"><option value="followup">Post-acute follow-up outreach</option><option value="highutil">High-utilizer care coordination</option><option value="handoff">Department handoff redesign</option><option value="sdoh">SDOH-assisted targeted outreach</option></select></div>
+        <div class="control"><label for="adoption">Operational adoption rate</label><div class="row"><span>Low</span><span id="adoptionValue">55%</span><span>High</span></div><input id="adoption" type="range" min="20" max="95" value="55" /></div>
+        <div class="control"><label for="coverage">Eligible cohort coverage</label><div class="row"><span>Narrow</span><span id="coverageValue">45%</span><span>Broad</span></div><input id="coverage" type="range" min="10" max="100" value="45" /></div>
+        <div class="control"><label for="intensity">Intervention intensity</label><div class="row"><span>Light-touch</span><span id="intensityValue">60%</span><span>High-touch</span></div><input id="intensity" type="range" min="10" max="100" value="60" /></div>
+        <div class="control"><label for="confidence">Data confidence multiplier</label><div class="row"><span>Low</span><span id="confidenceValue">80%</span><span>High</span></div><input id="confidence" type="range" min="40" max="100" value="80" /></div>
+      </div>
+      <div class="card panel">
+        <div class="eyebrow">Predicted Directional Lift</div>
+        <div class="result-grid">
+          <div class="result"><span>Follow-up completion lift</span><strong id="liftPct">+0.0 pts</strong></div>
+          <div class="result"><span>Delay reduction</span><strong id="delayPct">0.0%</strong></div>
+          <div class="result"><span>Coordination improvement</span><strong id="coordinationPct">0.0%</strong></div>
+          <div class="result"><span>Estimated patients reached</span><strong id="patientsReached">0</strong></div>
+        </div>
+        <div class="summary"><h3 id="summaryTitle">Best fit: post-acute follow-up outreach</h3><p id="summaryBody">This strategy tends to produce the clearest near-term improvement because the evidence for long follow-up gaps is already strong in the EDA.</p></div>
+        <p class="note">Assumption base: 359,760 observed patients. Stronger strategies get a larger baseline effect size before adoption, coverage, and confidence modifiers are applied.</p>
+      </div>
+    </section>
+  </div>
+  <script>
+    (function(){
+      const root=document.documentElement;
+      const button=document.querySelector('[data-theme-toggle]');
+      const saved=localStorage.getItem('rtms-theme');
+      if(saved==='dark') root.setAttribute('data-theme','dark');
+      function syncTheme(){button.textContent=root.getAttribute('data-theme')==='dark'?'Light mode':'Dark mode';}
+      button.addEventListener('click',function(){const dark=root.getAttribute('data-theme')==='dark';if(dark){root.removeAttribute('data-theme');localStorage.setItem('rtms-theme','light');}else{root.setAttribute('data-theme','dark');localStorage.setItem('rtms-theme','dark');}syncTheme();});
+      syncTheme();
+      const config={followup:{baseLift:12,baseDelay:18,baseCoordination:10,reach:.36,title:'Best fit: post-acute follow-up outreach',body:'This strategy tends to produce the clearest near-term improvement because the evidence for long follow-up gaps is already strong in the EDA.'},highutil:{baseLift:9,baseDelay:11,baseCoordination:17,reach:.18,title:'Best fit: high-utilizer care coordination',body:'This approach reaches fewer patients, but it can create stronger coordination gains in the highest-complexity journeys.'},handoff:{baseLift:8,baseDelay:10,baseCoordination:14,reach:.28,title:'Best fit: department handoff redesign',body:'This strategy is useful when your story emphasizes operational friction between service lines and repeat touchpoints.'},sdoh:{baseLift:6,baseDelay:8,baseCoordination:9,reach:.12,title:'Best fit: SDOH-assisted targeted outreach',body:'This works best as a selective overlay because coverage is limited to screened patients and should be framed carefully.'}};
+      const ids=['strategy','adoption','coverage','intensity','confidence'];
+      const els=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
+      const labels={adoptionValue:document.getElementById('adoptionValue'),coverageValue:document.getElementById('coverageValue'),intensityValue:document.getElementById('intensityValue'),confidenceValue:document.getElementById('confidenceValue'),liftPct:document.getElementById('liftPct'),delayPct:document.getElementById('delayPct'),coordinationPct:document.getElementById('coordinationPct'),patientsReached:document.getElementById('patientsReached'),summaryTitle:document.getElementById('summaryTitle'),summaryBody:document.getElementById('summaryBody')};
+      function formatNumber(n){return Math.round(n).toLocaleString();}
+      function render(){const strategy=config[els.strategy.value];const adoption=Number(els.adoption.value)/100;const coverage=Number(els.coverage.value)/100;const intensity=Number(els.intensity.value)/100;const confidence=Number(els.confidence.value)/100;labels.adoptionValue.textContent=Math.round(adoption*100)+'%';labels.coverageValue.textContent=Math.round(coverage*100)+'%';labels.intensityValue.textContent=Math.round(intensity*100)+'%';labels.confidenceValue.textContent=Math.round(confidence*100)+'%';const multiplier=adoption*coverage*(0.65+intensity*0.7)*confidence;const followLift=strategy.baseLift*multiplier;const delayReduction=strategy.baseDelay*multiplier;const coordinationGain=strategy.baseCoordination*multiplier;const reached=359760*strategy.reach*coverage*adoption;labels.liftPct.textContent='+'+followLift.toFixed(1)+' pts';labels.delayPct.textContent=delayReduction.toFixed(1)+'%';labels.coordinationPct.textContent=coordinationGain.toFixed(1)+'%';labels.patientsReached.textContent=formatNumber(reached);labels.summaryTitle.textContent=strategy.title;labels.summaryBody.textContent=strategy.body;}
+      Object.values(els).forEach(el=>el.addEventListener('input',render));
+      render();
+    }());
+  </script>
+</body>
+</html>

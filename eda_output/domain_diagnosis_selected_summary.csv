@@ -1,0 +1,37 @@
+diagnosis,encounter_count,prevalence_pct,domain,correlation
+"Encounter for general examination without complaint, suspected or reported diagnosis",27036,23.83,Alcohol Use,0.196
+"Encounter for general examination without complaint, suspected or reported diagnosis",27036,23.83,social connections,-0.18
+"Encounter for general examination without complaint, suspected or reported diagnosis",27036,23.83,physical activity,-0.143
+Essential,2960,2.61,stress,-0.072
+Essential,2960,2.61,physical activity,-0.047
+Essential,2960,2.61,Housing Stability,-0.037
+Encounter for supervision of normal pregnancy,2756,2.43,Housing Stability,0.178
+Encounter for supervision of normal pregnancy,2756,2.43,Alcohol Use,-0.081
+Encounter for supervision of normal pregnancy,2756,2.43,Depression,0.044
+Other sepsis,2183,1.92,physical activity,0.11
+Other sepsis,2183,1.92,Alcohol Use,-0.078
+Other sepsis,2183,1.92,social connections,0.069
+"Major depressive disorder, recurrent",1674,1.48,intimate partner violance,0.202
+"Major depressive disorder, recurrent",1674,1.48,stress,0.185
+"Major depressive disorder, recurrent",1674,1.48,Food insecurity,0.139
+Type 2 diabetes mellitus,1669,1.47,Alcohol Use,-0.033
+Type 2 diabetes mellitus,1669,1.47,Housing Stability,-0.025
+Type 2 diabetes mellitus,1669,1.47,stress,-0.025
+Disorders of lipoprotein metabolism and other lipidemias,1542,1.36,stress,-0.06
+Disorders of lipoprotein metabolism and other lipidemias,1542,1.36,Housing Stability,-0.039
+Disorders of lipoprotein metabolism and other lipidemias,1542,1.36,physical activity,-0.037
+"Encounter for other special examination without complaint, suspected or reported diagnosis",1241,1.09,Alcohol Use,0.028
+"Encounter for other special examination without complaint, suspected or reported diagnosis",1241,1.09,stress,0.016
+"Encounter for other special examination without complaint, suspected or reported diagnosis",1241,1.09,Transportation Needs,-0.013
+Atrial fibrillation and flutter,1158,1.02,Housing Stability,-0.053
+Atrial fibrillation and flutter,1158,1.02,stress,-0.032
+Atrial fibrillation and flutter,1158,1.02,Food insecurity,-0.03
+Chronic ischemic heart disease,767,0.68,Housing Stability,-0.04
+Chronic ischemic heart disease,767,0.68,stress,-0.022
+Chronic ischemic heart disease,767,0.68,Food insecurity,-0.018
+Persons encountering health services in other circumstances,606,0.53,physical activity,-0.028
+Persons encountering health services in other circumstances,606,0.53,Alcohol Use,0.019
+Persons encountering health services in other circumstances,606,0.53,Depression,0.018
+"Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium",597,0.53,Housing Stability,0.068
+"Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium",597,0.53,intimate partner violance,0.021
+"Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium",597,0.53,Alcohol Use,-0.02

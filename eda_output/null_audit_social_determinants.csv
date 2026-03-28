@@ -1,0 +1,6 @@
+column,dtype,n_null,n_unspecified,pct_missing_or_unspec,n_unique
+DisplayName,object,0,2326196,58.5,32
+AnswerText,object,0,722104,18.2,125
+EncounterKey,float64,0,0,0.0,1123930
+PatientDurableKey,float64,0,0,0.0,212357
+Domain,object,2326196,0,58.5,11

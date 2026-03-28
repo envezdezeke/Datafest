@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Journey Strategy</title>
+<style>
+  :root { --bg:#f6f1e8; --panel:#fffdf9; --ink:#1f2d2f; --muted:#5f7074; --accent:#0d6c63; --line:rgba(31,45,47,.14); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Avenir Next","Segoe UI",sans-serif; color:var(--ink); background:linear-gradient(180deg,#f8f3eb 0%,#efe4d7 100%); }
+  .page { width:min(920px, calc(100vw - 48px)); margin:32px auto; background:var(--panel); border:1px solid var(--line); border-radius:24px; padding:40px 44px; box-shadow:0 18px 45px rgba(25,35,38,.10); }
+  h1,h2,h3 { line-height:1.1; margin:0 0 10px; }
+  h1 { font-size:34px; margin-bottom:18px; }
+  h2 { font-size:22px; margin-top:22px; }
+  h3 { font-size:17px; margin-top:14px; }
+  p, li { font-size:14px; line-height:1.5; color:var(--ink); }
+  p { margin:0 0 10px; }
+  ul { margin:0 0 10px 0; padding-left:20px; }
+  li { margin-bottom:4px; }
+  code { color:var(--accent); font-family:Consolas, monospace; }
+  @page { size: letter; margin: 0.45in; }
+  @media print { body { background:white; } .page { width:auto; margin:0; box-shadow:none; border:none; border-radius:0; padding:0; } h1 { font-size:28px; } h2 { font-size:18px; margin-top:14px; } h3 { font-size:15px; margin-top:10px; } p, li { font-size:12px; line-height:1.35; } ul { margin-bottom:6px; } p { margin-bottom:6px; } }
+</style>
+</head>
+<body>
+  <div class="page"><h1>Journey Strategy</h1>
+<h2>Goal</h2>
+<p>Reduce patient friction, reduce operational breakdowns, and lower the amount of coordination work patients must do themselves.</p>
+<h2>What The Data Suggests</h2>
+<ul>
+<li>Social burdens cluster together rather than appear alone.</li>
+<li>The strongest hardship bundle is <code>Financial Resource Strain + Food insecurity + Transportation Needs + Utilities + Housing Stability</code>.</li>
+<li><code>Depression</code> and <code>stress</code> are strongly linked.</li>
+<li><code>Major depressive disorder, recurrent</code> has the clearest relationship with multiple hardship domains, especially <code>stress</code>, <code>intimate partner violance</code>, and <code>Food insecurity</code>.</li>
+<li>These patterns suggest the biggest journey failures happen at handoffs, follow-up, and cross-team coordination points.</li>
+</ul>
+<h2>Core Strategy</h2>
+<p>Shift from a visit-centered model to a journey-centered model.</p>
+<p>That means:</p>
+<ul>
+<li>identify high-friction encounters early</li>
+<li>assign the next step to the system, not the patient</li>
+<li>use domain signals to personalize support</li>
+<li>intervene hardest at transitions between visits</li>
+</ul>
+<h2>Priority Journey Problems</h2>
+<h3>1. Patients are doing too much coordination themselves</h3>
+<p>Examples:</p>
+<ul>
+<li>calling other offices on their own</li>
+<li>arranging transportation on their own</li>
+<li>managing referrals across teams</li>
+<li>figuring out follow-up steps from fragmented instructions</li>
+</ul>
+<h3>2. High-burden patients face multiple barriers at once</h3>
+<p>A patient with transportation, food, and housing strain will not benefit much from solving only one barrier.</p>
+<h3>3. Behavioral-health-related journeys need integrated support</h3>
+<p>For depression-related encounters, clinical treatment alone is not enough. The journey likely needs social and operational support built in.</p>
+<h2>Recommended Actions</h2>
+<h3>1. Create a high-friction journey segment</h3>
+<p>Flag encounters with:</p>
+<ul>
+<li>high-risk domain bundles</li>
+<li>recurrent depression or other high-burden diagnoses</li>
+<li>repeated follow-up needs</li>
+</ul>
+<p>Use these flags to route patients into enhanced support workflows.</p>
+<h3>2. Remove self-coordination at handoffs</h3>
+<ul>
+<li>schedule follow-up before the patient leaves</li>
+<li>make referrals directly instead of asking patients to initiate them</li>
+<li>give one clear next-step plan</li>
+<li>assign ownership for the next action to staff or workflow, not the patient</li>
+</ul>
+<h3>3. Add domain-based support triggers</h3>
+<ul>
+<li><code>Transportation Needs</code>: bundle appointments, offer virtual options, improve logistics support</li>
+<li><code>Food insecurity</code> or <code>Financial Resource Strain</code>: route to resource support and simplify billing-related friction</li>
+<li><code>Housing Stability</code>: escalate navigation help and reduce dependence on complicated self-managed follow-up</li>
+<li><code>Depression</code> and <code>stress</code>: use proactive outreach and lower-burden communication</li>
+</ul>
+<h3>4. Pilot a navigator-supported pathway</h3>
+<p>Start with one cohort:</p>
+<ul>
+<li>recurrent depression plus high social burden</li>
+</ul>
+<p>Then test:</p>
+<ul>
+<li>proactive outreach</li>
+<li>coordinated follow-up</li>
+<li>social-resource connection</li>
+<li>simplified care-plan communication</li>
+</ul>
+<h2>Metrics To Track</h2>
+<ul>
+<li>follow-up completion rate</li>
+<li>no-show rate</li>
+<li>referral completion rate</li>
+<li>time to next completed encounter</li>
+<li>repeat acute utilization</li>
+<li>percent of high-friction encounters with documented next-step ownership</li>
+</ul>
+<h2>Bottom Line</h2>
+<p>The best opportunity is not a generic customer-experience program. It is a targeted journey redesign for patients whose clinical needs and social burdens overlap.</p>
+<p>If the system takes over more of the coordination work, especially at transitions, patients will experience less friction and operations will run more reliably.</p></div>
+</body>
+</html>

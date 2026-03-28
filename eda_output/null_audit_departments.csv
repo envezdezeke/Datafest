@@ -1,0 +1,10 @@
+column,dtype,n_null,n_unspecified,pct_missing_or_unspec,n_unique
+DepartmentKey,int64,0,0,0.0,11597
+Address,object,2884,1390,36.9,467
+City,object,2204,1390,31.0,69
+County,object,574,4800,46.3,31
+DepartmentName,object,0,3023,26.1,1760
+DepartmentSpecialty,object,574,7322,68.1,120
+DepartmentType,object,574,6096,57.5,11
+PostalCode,object,3009,1390,37.9,136
+CensusTract,float64,4575,0,39.4,62

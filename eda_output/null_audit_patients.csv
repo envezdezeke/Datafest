@@ -1,0 +1,13 @@
+column,dtype,n_null,n_unspecified,pct_missing_or_unspec,n_unique
+CensusBlockGroupFipsCode,object,0,611171,64.5,1321
+DurableKey,float64,0,0,0.0,947685
+FirstRace,object,365398,0,38.6,10
+MaritalStatus,object,0,379035,40.0,10
+MyChartStatus,object,0,392762,41.4,7
+OmbEthnicity,object,0,0,0.0,4
+OmbRace,object,0,0,0.0,9
+SexAssignedAtBirth,object,0,885695,93.5,7
+SexualOrientation,object,0,900731,95.0,7
+SmokingStatus,object,0,445353,47.0,11
+VitalStatus,object,0,0,0.0,2
+PatientBirthYearBin,float64,1725,0,0.2,34
